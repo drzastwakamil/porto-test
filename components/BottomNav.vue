@@ -25,10 +25,9 @@ const route = useRoute()
 
 <style scoped>
 .bottom-nav {
-  position: fixed;
-  left: 0;
-  right: 0;
+  position: sticky;
   bottom: 0;
+  flex-shrink: 0;
   display: flex;
   background: var(--color-surface);
   border-top: 1px solid var(--color-border);

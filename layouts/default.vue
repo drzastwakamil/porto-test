@@ -1,7 +1,9 @@
 <template>
   <div class="app-shell">
     <LocaleSwitcher />
-    <slot />
+    <main class="app-main">
+      <slot />
+    </main>
     <InstallPrompt />
     <BottomNav />
   </div>
@@ -9,6 +11,14 @@
 
 <style scoped>
 .app-shell {
-  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+
+.app-main {
+  flex: 1 0 auto;
+  min-width: 0;
 }
 </style>
