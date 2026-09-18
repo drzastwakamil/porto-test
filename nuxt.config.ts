@@ -4,6 +4,11 @@ export default defineNuxtConfig({
   devtools: { enabled: false },
   ssr: false,
   css: ['~/assets/css/main.css'],
+  nitro: {
+    prerender: {
+      routes: ['/']
+    }
+  },
   app: {
     head: {
       link: [{ rel: 'apple-touch-icon', href: '/icons/icon-192.png' }],
@@ -46,7 +51,24 @@ export default defineNuxtConfig({
       ]
     },
     workbox: {
-      globPatterns: ['**/*.{js,css,html,png,svg,ico,woff2}']
+      globPatterns: ['**/*.{js,css,html,png,svg,ico,woff2}'],
+      navigateFallback: '/',
+      runtimeCaching: [
+        {
+          urlPattern: /^https:\/\/(thumb|upload|commons)\.wikimedia\.org\/.*/i,
+          handler: 'CacheFirst',
+          options: {
+            cacheName: 'porto-weekend-images',
+            expiration: {
+              maxEntries: 150,
+              maxAgeSeconds: 60 * 60 * 24 * 180
+            },
+            cacheableResponse: {
+              statuses: [0, 200]
+            }
+          }
+        }
+      ]
     },
     devOptions: {
       enabled: true,
