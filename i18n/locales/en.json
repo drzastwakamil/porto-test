@@ -143,6 +143,12 @@
     "palacio-cristal": { "name": "Jardins do Palácio de Cristal", "hours": "08:00–21:00 in September", "why": "Sweeping garden terraces with river and city views, peacocks included." },
     "sentimentos": { "name": "Jardim dos Sentimentos", "why": "A quiet, less-visited corner within the same gardens." }
   },
+  "install": {
+    "title": "Install this app",
+    "hintAndroid": "Add it to your home screen for quick, full-screen access.",
+    "hintIOS": "Tap the Share icon, then \"Add to Home Screen\".",
+    "button": "Install"
+  },
   "guide": {
     "subtitle": "Practical basics for getting around Porto",
     "phrasesTitle": "Handy phrases",

@@ -2,6 +2,7 @@
   <div class="app-shell">
     <LocaleSwitcher />
     <slot />
+    <InstallPrompt />
     <BottomNav />
   </div>
 </template>

@@ -143,6 +143,12 @@
     "palacio-cristal": { "name": "Jardins do Palácio de Cristal", "hours": "08:00–21:00 we wrześniu", "why": "Rozległe tarasowe ogrody z widokiem na rzekę i miasto, w tym pawie." },
     "sentimentos": { "name": "Jardim dos Sentimentos", "why": "Spokojniejszy, mniej odwiedzany zakątek tych samych ogrodów." }
   },
+  "install": {
+    "title": "Zainstaluj aplikację",
+    "hintAndroid": "Dodaj ją do ekranu głównego, aby mieć szybki dostęp na pełnym ekranie.",
+    "hintIOS": "Stuknij ikonę Udostępnij, a potem „Dodaj do ekranu początkowego”.",
+    "button": "Zainstaluj"
+  },
   "guide": {
     "subtitle": "Praktyczne podstawy poruszania się po Porto",
     "phrasesTitle": "Przydatne zwroty",
