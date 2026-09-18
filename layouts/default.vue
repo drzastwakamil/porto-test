@@ -1,5 +1,6 @@
 <template>
   <div class="app-shell">
+    <LocaleSwitcher />
     <slot />
     <BottomNav />
   </div>

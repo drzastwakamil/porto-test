@@ -1,0 +1,199 @@
+{
+  "nav": {
+    "itinerary": "Itinerary",
+    "explore": "Explore",
+    "guide": "Guide"
+  },
+  "common": {
+    "status": {
+      "free": "Free",
+      "paid": "Paid",
+      "food": "Food",
+      "rest": "Rest",
+      "travel": "Travel"
+    },
+    "category": {
+      "sight": "Sight",
+      "viewpoint": "Viewpoint",
+      "museum": "Museum",
+      "garden": "Garden",
+      "experience": "Experience"
+    },
+    "openInMaps": "Open in Maps ↗",
+    "hours": "Hours",
+    "map": "Map ↗",
+    "noSpotsMatch": "No spots match these filters.",
+    "filters": {
+      "all": "All",
+      "sight": "Sights",
+      "viewpoint": "Viewpoints",
+      "museum": "Museums",
+      "garden": "Gardens",
+      "experience": "Experiences",
+      "anyPrice": "Any price",
+      "free": "Free",
+      "paid": "Paid"
+    }
+  },
+  "trip": {
+    "dateRange": "18–21 September 2026",
+    "stayLabel": "Stay",
+    "arrivalLabel": "Arrival",
+    "departureLabel": "Departure",
+    "matchLabel": "Match",
+    "accommodationNote": "Breakfast every day at the apartment.",
+    "arrivalDate": "Friday 18 September",
+    "arrivalNote": "Land in Porto around 10:30, bags + transfer into the centre, apartment check-in ~11:45–12:30.",
+    "departureDate": "Monday 21 September",
+    "departureLeaveBy": "Leave the apartment by 01:30–02:00.",
+    "departureNote": "Aim to be at the airport by ~02:30. No sightseeing planned after the match on Sunday.",
+    "matchDate": "Sunday 20 September"
+  },
+  "itinerary": {
+    "progress": "{checked} / {total} done",
+    "days": {
+      "fri": { "label": "Friday", "date": "18 Sep", "theme": "Historic centre — the most intense day, wear comfortable shoes" },
+      "sat": { "label": "Saturday", "date": "19 Sep", "theme": "Serralves + Clérigos + Bolsa + Gaia — deliberately slow start" },
+      "sun": { "label": "Sunday", "date": "20 Sep", "theme": "Light day + FC Porto – Benfica, 20:30" },
+      "mon": { "label": "Monday", "date": "21 Sep", "theme": "Departure" }
+    },
+    "items": {
+      "fri-01": { "title": "Arrival in Porto", "note": "Bags + transfer into the centre" },
+      "fri-02": { "title": "Apartment — drop bags", "note": "Quick rest before heading out" },
+      "fri-03": { "title": "Sé Cathedral" },
+      "fri-04": { "title": "Igreja de São Lourenço / MASA", "note": "Friday is the best day for this" },
+      "fri-05": { "title": "Miradouro da Igreja de São Lourenço" },
+      "fri-06": { "title": "Miradouro da Vitória" },
+      "fri-07": { "title": "Miradouro das Virtudes" },
+      "fri-08": { "title": "São Bento Station", "note": "Famous azulejo tile murals" },
+      "fri-09": { "title": "Lunch", "note": "Don't linger too long" },
+      "fri-10": { "title": "Igreja da Santíssima Trindade", "note": "Friday open until 17:00" },
+      "fri-11": { "title": "Câmara Municipal do Porto", "note": "Essentially viewed from outside" },
+      "fri-12": { "title": "Mercado do Bolhão", "note": "Free entry, Fri 08:00–20:00" },
+      "fri-13": { "title": "Capela das Almas", "note": "Free, Fri ~07:30–19:00" },
+      "fri-14": { "title": "Igreja de Santo Ildefonso" },
+      "fri-15": { "title": "Igreja do Carmo + square" },
+      "fri-16": { "title": "Livraria Lello", "note": "Paid, book an entry slot in advance" },
+      "fri-17": { "title": "Torre dos Clérigos — exterior only", "note": "Climbing the tower is on Saturday" },
+      "fri-18": { "title": "Igreja e Museu de São Francisco" },
+      "fri-19": { "title": "Cais da Ribeira", "note": "The postcard stretch" },
+      "fri-20": { "title": "Elevador da Ribeira / funicular", "note": "Used as a shortcut back up" },
+      "fri-21": { "title": "Dinner + back to the apartment", "note": "End of sightseeing for the day" },
+      "sat-01": { "title": "Breakfast", "note": "At the apartment" },
+      "sat-02": { "title": "Depart for Serralves", "note": "On foot, ~45–50 min" },
+      "sat-03": { "title": "Serralves", "note": "Relaxed block: park + museum / Treetop Walk" },
+      "sat-04": { "title": "Walk back", "note": "No extra stops" },
+      "sat-05": { "title": "Lunch", "note": "Good moment for a francesinha" },
+      "sat-06": { "title": "Banco de Materiais", "note": "Free, 10:00–17:30" },
+      "sat-07": { "title": "Torre dos Clérigos + Museum", "note": "Book ahead" },
+      "sat-08": { "title": "Palácio da Bolsa", "note": "Guided tour is mandatory" },
+      "sat-09": { "title": "Ribeira" },
+      "sat-10": { "title": "Ponte Dom Luís I — lower deck" },
+      "sat-11": { "title": "Cais de Gaia" },
+      "sat-12": { "title": "O Coelho — Bordalo II", "note": "Outdoor street art" },
+      "sat-13": { "title": "Wine cellar — e.g. Caves Cálem", "note": "Tour + tasting, book ahead" },
+      "sat-14": { "title": "Teleférico de Gaia", "note": "Paid, 10:00–20:00 this time of year" },
+      "sat-15": { "title": "Serra do Pilar + viewpoint", "note": "Monastery interior currently closed" },
+      "sat-16": { "title": "Ponte Dom Luís I — upper deck" },
+      "sat-17": { "title": "Back to the apartment", "note": "Rest" },
+      "sat-18": { "title": "Dinner", "note": "Light" },
+      "sun-01": { "title": "Breakfast", "note": "At the apartment" },
+      "sun-02": { "title": "Walk to Jardins do Palácio de Cristal" },
+      "sun-03": { "title": "Jardins do Palácio de Cristal", "note": "Free, 08:00–21:00 in September" },
+      "sun-04": { "title": "Jardim dos Sentimentos", "note": "Quiet part of the gardens" },
+      "sun-05": { "title": "Walk back", "note": "No more attractions" },
+      "sun-06": { "title": "Lunch", "note": "Light to medium" },
+      "sun-07": { "title": "Rest", "note": "Deliberate buffer before the match" },
+      "sun-08": { "title": "Early dinner", "note": "Not right before entering the stadium" },
+      "sun-09": { "title": "Walk to Estádio do Dragão", "note": "Better to leave early" },
+      "sun-10": { "title": "At the stadium", "note": "Buffer for entry and security checks" },
+      "sun-11": { "title": "FC Porto – Benfica" },
+      "sun-12": { "title": "Head back, collect belongings", "note": "No more attractions", "time": "After the match" },
+      "sun-13": { "title": "Taxi/Uber to the airport", "note": "Flight at 04:00" },
+      "mon-01": { "title": "Flight home", "note": "Aim to be at the airport by ~02:30. No sightseeing planned." }
+    }
+  },
+  "spots": {
+    "se": { "name": "Sé Cathedral", "hours": "09:00–18:30 (tower until 18:00)", "why": "Porto's cathedral, with views over the Ribeira rooftops." },
+    "sao-lourenco": { "name": "Igreja de São Lourenço / MASA", "hours": "Fri 09:00–16:30", "why": "Church plus a modern art museum in one visit." },
+    "mirador-sao-lourenco": { "name": "Miradouro da Igreja de São Lourenço", "why": "Quick free viewpoint right by São Lourenço." },
+    "mirador-vitoria": { "name": "Miradouro da Vitória", "why": "One of the best classic postcard views over the rooftops and river." },
+    "mirador-virtudes": { "name": "Miradouro das Virtudes", "why": "Terraced garden viewpoint, great for a breather." },
+    "sao-bento": { "name": "São Bento Station", "hours": "06:30–01:00", "why": "Working train station with a stunning azulejo tile-mural hall." },
+    "trindade": { "name": "Igreja da Santíssima Trindade", "hours": "Fri until 17:00", "why": "One of Porto's largest churches, free to step into." },
+    "camara": { "name": "Câmara Municipal do Porto", "why": "Porto's city hall — worth a look from the outside." },
+    "bolhao": { "name": "Mercado do Bolhão", "hours": "Fri 08:00–20:00, Sat 08:00–18:00", "why": "Restored historic market — good for snacks and people-watching." },
+    "almas": { "name": "Capela das Almas", "hours": "Fri ~07:30–19:00", "why": "A chapel entirely covered in blue azulejo tiles." },
+    "ildefonso": { "name": "Igreja de Santo Ildefonso", "why": "Another striking azulejo-tiled church facade." },
+    "carmo": { "name": "Igreja do Carmo + square", "hours": "09:30–18:00", "why": "Twin-church complex with an equally famous tiled side wall." },
+    "lello": { "name": "Livraria Lello", "hours": "09:00–19:30", "why": "World-famous bookshop — book a timed entry slot ahead." },
+    "clerigos": { "name": "Torre dos Clérigos + Museum", "hours": "09:00–19:00 (last entry earlier)", "why": "Climb the tower for the best panoramic view of the city." },
+    "sao-francisco": { "name": "Igreja e Museu de São Francisco", "hours": "~09:00–20:00 in September", "why": "Gothic church with an extraordinarily ornate gilded interior." },
+    "ribeira": { "name": "Cais da Ribeira", "why": "The classic riverside strip — colourful houses, cafés, river views." },
+    "elevador": { "name": "Elevador da Ribeira", "why": "Funicular shortcut up from the riverside to the upper town." },
+    "serralves": { "name": "Serralves", "hours": "10:00–19:00 (check seasonal hours)", "why": "Art deco villa, park, contemporary art museum and Treetop Walk." },
+    "banco-materiais": { "name": "Banco de Materiais", "hours": "Tue–Sun 10:00–17:30", "why": "Small, free museum of architectural materials and tiles." },
+    "bolsa": { "name": "Palácio da Bolsa", "hours": "09:00–18:30 (guided tour only)", "why": "Opulent former stock exchange — the Arabian Room is the highlight." },
+    "ponte": { "name": "Ponte Dom Luís I", "why": "Iconic double-deck iron bridge — walk both levels for different views." },
+    "cais-gaia": { "name": "Cais de Gaia", "why": "Riverside promenade on the Gaia side, facing the Ribeira." },
+    "coelho": { "name": "O Coelho — Bordalo II", "why": "Giant recycled-material rabbit street art installation." },
+    "winery": { "name": "Wine cellar — e.g. Caves Cálem", "why": "Port wine cellar tour + tasting — book a slot in advance." },
+    "teleferico": { "name": "Teleférico de Gaia", "hours": "10:00–20:00 (this period)", "why": "Cable car over the Gaia riverside with wide Douro views." },
+    "serra-pilar": { "name": "Serra do Pilar + viewpoint", "why": "One of the best sunset viewpoints over both riverbanks (monastery interior currently closed)." },
+    "palacio-cristal": { "name": "Jardins do Palácio de Cristal", "hours": "08:00–21:00 in September", "why": "Sweeping garden terraces with river and city views, peacocks included." },
+    "sentimentos": { "name": "Jardim dos Sentimentos", "why": "A quiet, less-visited corner within the same gardens." }
+  },
+  "guide": {
+    "subtitle": "Practical basics for getting around Porto",
+    "phrasesTitle": "Handy phrases",
+    "sections": {
+      "book-ahead": {
+        "title": "Book ahead",
+        "items": [
+          "Livraria Lello — reserve a timed entry slot.",
+          "Torre dos Clérigos — Saturday, aim for ~14:20–14:30.",
+          "Palácio da Bolsa — Saturday, guided tour around ~15:10–15:30.",
+          "Wine cellar tasting (e.g. Caves Cálem) — Saturday around 17:20.",
+          "FC Porto – Benfica — tickets and entry per the organiser.",
+          "Keep a taxi/Uber option ready for the return after the match."
+        ]
+      },
+      "rules-of-thumb": {
+        "title": "Trip rules of thumb",
+        "items": [
+          "Friday is the most intense day of walking — comfortable shoes, keep viewpoint stops short.",
+          "Saturday deliberately starts slow (10:00–12:00 at Serralves).",
+          "Clérigos Tower was moved to Saturday so it isn't rushed on Friday.",
+          "The stadium isn't a separate outing — Sunday's plan flows straight into the match.",
+          "No beaches or Matosinhos on this trip.",
+          "Serra do Pilar is viewpoint-only — the monastery interior is currently closed."
+        ]
+      },
+      "money": {
+        "title": "Currency & paying",
+        "items": [
+          "Currency is the Euro (€).",
+          "Cards and contactless are widely accepted in Porto.",
+          "Small cafés and market stalls (like Bolhão) may prefer cash — keep some small notes and coins handy.",
+          "Most paid attractions on this trip are small amounts (€3–€15) — exact change speeds up the queue."
+        ]
+      },
+      "tipping": {
+        "title": "Tipping",
+        "items": [
+          "Tipping is not obligatory in Portugal.",
+          "Rounding up the bill, or ~5–10% at a nice sit-down dinner, is generous and appreciated.",
+          "No need to tip for coffee or quick counter service."
+        ]
+      },
+      "getting-around": {
+        "title": "Getting around",
+        "items": [
+          "This plan is almost entirely on foot — comfortable shoes matter more than transit passes.",
+          "If you need the metro/tram/bus, Porto uses the rechargeable Andante card, sold at metro stations.",
+          "Taxis and Uber are reliable and are the planned way back after the Sunday match."
+        ]
+      }
+    }
+  }
+}

@@ -14,7 +14,17 @@ export default defineNuxtConfig({
       ]
     }
   },
-  modules: ['@vite-pwa/nuxt'],
+  modules: ['@vite-pwa/nuxt', '@nuxtjs/i18n'],
+  i18n: {
+    langDir: 'locales',
+    locales: [
+      { code: 'en', language: 'en-US', name: 'English', file: 'en.json' },
+      { code: 'pl', language: 'pl-PL', name: 'Polski', file: 'pl.json' }
+    ],
+    defaultLocale: 'en',
+    strategy: 'no_prefix',
+    detectBrowserLanguage: false
+  },
   pwa: {
     registerType: 'autoUpdate',
     manifest: {

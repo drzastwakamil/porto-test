@@ -1,21 +1,21 @@
 <template>
   <div class="page">
-    <h1 class="page__title">Guide</h1>
-    <p class="page__subtitle">Practical basics for getting around Porto</p>
+    <h1 class="page__title">{{ $t('nav.guide') }}</h1>
+    <p class="page__subtitle">{{ $t('guide.subtitle') }}</p>
 
     <GuideSection
-      v-for="section in guideSections"
+      v-for="section in sections"
       :key="section.id"
       :title="section.title"
       :items="section.items"
     />
 
     <section class="phrases-section card">
-      <h2 class="phrases-section__title">Handy phrases</h2>
+      <h2 class="phrases-section__title">{{ $t('guide.phrasesTitle') }}</h2>
       <ul class="phrases">
         <li v-for="phrase in phrases" :key="phrase.pt" class="phrases__item">
           <span class="phrases__pt">{{ phrase.pt }}</span>
-          <span class="phrases__en">{{ phrase.en }}</span>
+          <span class="phrases__translation">{{ locale === 'pl' ? phrase.pl : phrase.en }}</span>
         </li>
       </ul>
     </section>
@@ -23,7 +23,17 @@
 </template>
 
 <script setup lang="ts">
-import { guideSections, phrases } from '~/data/guide'
+import { guideSectionIds, phrases } from '~/data/guide'
+
+const { t, tm, rt, locale } = useI18n()
+
+const sections = computed(() =>
+  guideSectionIds.map((id) => ({
+    id,
+    title: t(`guide.sections.${id}.title`),
+    items: (tm(`guide.sections.${id}.items`) as unknown[]).map((item) => rt(item))
+  }))
+)
 </script>
 
 <style scoped>
@@ -64,7 +74,7 @@ import { guideSections, phrases } from '~/data/guide'
   font-weight: 600;
 }
 
-.phrases__en {
+.phrases__translation {
   color: var(--color-muted);
   text-align: right;
 }

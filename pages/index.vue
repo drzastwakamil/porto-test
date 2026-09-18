@@ -2,38 +2,36 @@
   <div class="page">
     <header class="hero">
       <h1>{{ trip.title }}</h1>
-      <p class="hero__dates">{{ trip.dateRange }}</p>
+      <p class="hero__dates">{{ $t('trip.dateRange') }}</p>
     </header>
 
     <section class="essentials card">
       <div class="essentials__row">
-        <span class="essentials__label">Stay</span>
+        <span class="essentials__label">{{ $t('trip.stayLabel') }}</span>
         <div>
           <div>{{ trip.accommodation.address }}</div>
-          <a :href="accommodationMapUrl" target="_blank" rel="noopener" class="essentials__link">Open in Maps ↗</a>
-          <div class="essentials__note">{{ trip.accommodation.note }}</div>
+          <a :href="accommodationMapUrl" target="_blank" rel="noopener" class="essentials__link">{{ $t('common.openInMaps') }}</a>
+          <div class="essentials__note">{{ $t('trip.accommodationNote') }}</div>
         </div>
       </div>
       <div class="essentials__row">
-        <span class="essentials__label">Arrival</span>
+        <span class="essentials__label">{{ $t('trip.arrivalLabel') }}</span>
         <div>
-          <div>{{ trip.arrival.date }}</div>
-          <div class="essentials__note">{{ trip.arrival.note }}</div>
+          <div>{{ $t('trip.arrivalDate') }}</div>
+          <div class="essentials__note">{{ $t('trip.arrivalNote') }}</div>
         </div>
       </div>
       <div class="essentials__row">
-        <span class="essentials__label">Departure</span>
+        <span class="essentials__label">{{ $t('trip.departureLabel') }}</span>
         <div>
-          <div>{{ trip.departure.date }} · flight {{ trip.departure.flightTime }}</div>
-          <div class="essentials__note">
-            Leave the apartment by {{ trip.departure.leaveApartmentBy }}. {{ trip.departure.note }}
-          </div>
+          <div>{{ $t('trip.departureDate') }} · {{ trip.departure.flightTime }}</div>
+          <div class="essentials__note">{{ $t('trip.departureLeaveBy') }} {{ $t('trip.departureNote') }}</div>
         </div>
       </div>
       <div class="essentials__row">
-        <span class="essentials__label">Match</span>
+        <span class="essentials__label">{{ $t('trip.matchLabel') }}</span>
         <div>
-          <div>{{ trip.match.name }} · {{ trip.match.date }}, {{ trip.match.time }}</div>
+          <div>{{ trip.match.name }} · {{ $t('trip.matchDate') }}, {{ trip.match.time }}</div>
           <a :href="matchMapUrl" target="_blank" rel="noopener" class="essentials__link">{{ trip.match.venue }} ↗</a>
         </div>
       </div>
@@ -43,7 +41,7 @@
       <div class="progress__bar">
         <div class="progress__fill" :style="{ width: progressPercent + '%' }" />
       </div>
-      <span class="progress__label">{{ checkedCount }} / {{ totalCount }} done</span>
+      <span class="progress__label">{{ $t('itinerary.progress', { checked: checkedCount, total: totalCount }) }}</span>
     </div>
 
     <ItineraryDay v-for="day in itinerary" :key="day.id" :day="day" />

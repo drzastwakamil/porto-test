@@ -2,12 +2,12 @@
   <li class="spot card">
     <div class="spot__header">
       <div>
-        <div class="spot__name">{{ spot.name }}</div>
+        <div class="spot__name">{{ $t(`spots.${spot.id}.name`) }}</div>
         <div class="spot__badges">
           <span class="badge" :class="spot.free ? 'badge-free' : 'badge-paid'">
-            {{ spot.free ? 'Free' : spot.price || 'Paid' }}
+            {{ spot.free ? $t('common.status.free') : spot.price || $t('common.status.paid') }}
           </span>
-          <span class="chip spot__category">{{ categoryLabel }}</span>
+          <span class="chip spot__category">{{ $t(`common.category.${spot.category}`) }}</span>
         </div>
       </div>
       <button
@@ -15,15 +15,14 @@
         type="button"
         :class="{ active: isFavorite(spot.id) }"
         :aria-pressed="isFavorite(spot.id)"
-        :aria-label="`Favorite ${spot.name}`"
         @click="toggle(spot.id)"
       >
         {{ isFavorite(spot.id) ? '★' : '☆' }}
       </button>
     </div>
-    <p class="spot__why">{{ spot.why }}</p>
-    <div v-if="spot.hours" class="spot__hours">Hours: {{ spot.hours }}</div>
-    <a :href="mapUrl" target="_blank" rel="noopener" class="spot__map">Open in Maps ↗</a>
+    <p class="spot__why">{{ $t(`spots.${spot.id}.why`) }}</p>
+    <div v-if="hours" class="spot__hours">{{ $t('common.hours') }}: {{ hours }}</div>
+    <a :href="mapUrl" target="_blank" rel="noopener" class="spot__map">{{ $t('common.openInMaps') }}</a>
   </li>
 </template>
 
@@ -33,16 +32,10 @@ import { buildGoogleMapsUrl } from '~/utils/maps'
 
 const props = defineProps<{ spot: Spot }>()
 const { isFavorite, toggle } = useFavorites()
+const { t, te } = useI18n()
 
-const categoryLabels: Record<string, string> = {
-  sight: 'Sight',
-  viewpoint: 'Viewpoint',
-  museum: 'Museum',
-  garden: 'Garden',
-  experience: 'Experience'
-}
-
-const categoryLabel = computed(() => categoryLabels[props.spot.category] ?? props.spot.category)
+const hoursKey = computed(() => `spots.${props.spot.id}.hours`)
+const hours = computed(() => (te(hoursKey.value) ? t(hoursKey.value) : ''))
 const mapUrl = computed(() => buildGoogleMapsUrl(props.spot.mapQuery))
 </script>
 

@@ -4,21 +4,21 @@
       class="item__check"
       type="button"
       :aria-pressed="isChecked(item.id)"
-      :aria-label="`Mark ${item.title} as done`"
+      :aria-label="itemTitle"
       @click="toggle(item.id)"
     >
       <span v-if="isChecked(item.id)">✓</span>
     </button>
     <div class="item__body">
       <div class="item__row">
-        <span class="item__time">{{ item.time }}</span>
-        <span class="badge" :class="`badge-${item.status}`">{{ statusLabel }}</span>
+        <span class="item__time">{{ displayTime }}</span>
+        <span class="badge" :class="`badge-${item.status}`">{{ $t(`common.status.${item.status}`) }}</span>
       </div>
-      <div class="item__title">{{ item.title }}</div>
-      <div v-if="item.note" class="item__note">{{ item.note }}</div>
+      <div class="item__title">{{ itemTitle }}</div>
+      <div v-if="itemNote" class="item__note">{{ itemNote }}</div>
       <div v-if="item.price || item.mapQuery" class="item__meta">
         <span v-if="item.price">{{ item.price }}</span>
-        <a v-if="item.mapQuery" :href="mapUrl" target="_blank" rel="noopener" class="item__map">Map ↗</a>
+        <a v-if="item.mapQuery" :href="mapUrl" target="_blank" rel="noopener" class="item__map">{{ $t('common.map') }}</a>
       </div>
     </div>
   </li>
@@ -30,16 +30,18 @@ import { buildGoogleMapsUrl } from '~/utils/maps'
 
 const props = defineProps<{ item: ItineraryItem }>()
 const { isChecked, toggle } = useItineraryState()
+const { t, te } = useI18n()
 
-const statusLabels: Record<string, string> = {
-  free: 'Free',
-  paid: 'Paid',
-  food: 'Food',
-  rest: 'Rest',
-  travel: 'Travel'
-}
-
-const statusLabel = computed(() => statusLabels[props.item.status] ?? props.item.status)
+const itemTitle = computed(() => t(`itinerary.items.${props.item.id}.title`))
+const itemNote = computed(() => {
+  const key = `itinerary.items.${props.item.id}.note`
+  return te(key) ? t(key) : ''
+})
+const displayTime = computed(() => {
+  if (props.item.time) return props.item.time
+  const key = `itinerary.items.${props.item.id}.time`
+  return te(key) ? t(key) : ''
+})
 const mapUrl = computed(() => (props.item.mapQuery ? buildGoogleMapsUrl(props.item.mapQuery) : ''))
 </script>
 

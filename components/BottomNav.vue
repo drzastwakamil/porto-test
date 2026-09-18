@@ -2,15 +2,15 @@
   <nav class="bottom-nav">
     <NuxtLink to="/" class="bottom-nav__item" :class="{ active: route.path === '/' }">
       <span class="bottom-nav__icon">🗓️</span>
-      <span>Itinerary</span>
+      <span>{{ $t('nav.itinerary') }}</span>
     </NuxtLink>
     <NuxtLink to="/explore" class="bottom-nav__item" :class="{ active: route.path.startsWith('/explore') }">
       <span class="bottom-nav__icon">📍</span>
-      <span>Explore</span>
+      <span>{{ $t('nav.explore') }}</span>
     </NuxtLink>
     <NuxtLink to="/guide" class="bottom-nav__item" :class="{ active: route.path.startsWith('/guide') }">
       <span class="bottom-nav__icon">💡</span>
-      <span>Guide</span>
+      <span>{{ $t('nav.guide') }}</span>
     </NuxtLink>
   </nav>
 </template>

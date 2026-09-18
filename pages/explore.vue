@@ -1,7 +1,7 @@
 <template>
   <div class="page">
-    <h1 class="page__title">Explore</h1>
-    <p class="page__subtitle">{{ filteredSpots.length }} spots</p>
+    <h1 class="page__title">{{ $t('nav.explore') }}</h1>
+    <p class="page__subtitle">{{ subtitle }}</p>
 
     <CategoryFilter
       :category="category"
@@ -14,12 +14,14 @@
       <SpotCard v-for="spot in filteredSpots" :key="spot.id" :spot="spot" />
     </ul>
 
-    <p v-if="!filteredSpots.length" class="empty">No spots match these filters.</p>
+    <p v-if="!filteredSpots.length" class="empty">{{ $t('common.noSpotsMatch') }}</p>
   </div>
 </template>
 
 <script setup lang="ts">
 import { spots } from '~/data/spots'
+
+const { locale } = useI18n()
 
 const category = ref('all')
 const cost = ref('all')
@@ -32,6 +34,12 @@ const filteredSpots = computed(() =>
     return true
   })
 )
+
+const subtitle = computed(() => {
+  const count = filteredSpots.value.length
+  if (locale.value === 'pl') return `Liczba miejsc: ${count}`
+  return `${count} spot${count === 1 ? '' : 's'}`
+})
 </script>
 
 <style scoped>

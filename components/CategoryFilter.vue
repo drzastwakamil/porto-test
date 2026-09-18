@@ -9,7 +9,7 @@
         :class="{ active: category === option.value }"
         @click="$emit('update:category', option.value)"
       >
-        {{ option.label }}
+        {{ $t(`common.filters.${option.key}`) }}
       </button>
     </div>
     <div class="filters__row">
@@ -21,7 +21,7 @@
         :class="{ active: cost === option.value }"
         @click="$emit('update:cost', option.value)"
       >
-        {{ option.label }}
+        {{ $t(`common.filters.${option.key}`) }}
       </button>
     </div>
   </div>
@@ -32,18 +32,18 @@ defineProps<{ category: string; cost: string }>()
 defineEmits<{ 'update:category': [value: string]; 'update:cost': [value: string] }>()
 
 const categoryOptions = [
-  { value: 'all', label: 'All' },
-  { value: 'sight', label: 'Sights' },
-  { value: 'viewpoint', label: 'Viewpoints' },
-  { value: 'museum', label: 'Museums' },
-  { value: 'garden', label: 'Gardens' },
-  { value: 'experience', label: 'Experiences' }
+  { value: 'all', key: 'all' },
+  { value: 'sight', key: 'sight' },
+  { value: 'viewpoint', key: 'viewpoint' },
+  { value: 'museum', key: 'museum' },
+  { value: 'garden', key: 'garden' },
+  { value: 'experience', key: 'experience' }
 ]
 
 const costOptions = [
-  { value: 'all', label: 'Any price' },
-  { value: 'free', label: 'Free' },
-  { value: 'paid', label: 'Paid' }
+  { value: 'all', key: 'anyPrice' },
+  { value: 'free', key: 'free' },
+  { value: 'paid', key: 'paid' }
 ]
 </script>
 

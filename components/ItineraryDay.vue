@@ -1,8 +1,8 @@
 <template>
   <section class="day">
     <header class="day__header">
-      <h2 class="day__label">{{ day.label }} <span class="day__date">{{ day.date }}</span></h2>
-      <p class="day__theme">{{ day.theme }}</p>
+      <h2 class="day__label">{{ $t(`itinerary.days.${day.id}.label`) }} <span class="day__date">{{ $t(`itinerary.days.${day.id}.date`) }}</span></h2>
+      <p class="day__theme">{{ $t(`itinerary.days.${day.id}.theme`) }}</p>
     </header>
     <ul class="day__list card">
       <ItineraryItem v-for="item in day.items" :key="item.id" :item="item" />
