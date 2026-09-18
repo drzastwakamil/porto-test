@@ -169,6 +169,29 @@
       "capital-of-culture": { "title": "Europejska Stolica Kultury", "note": "Rok Porto w centrum uwagi — dzięki niemu powstała też **Casa da Música**." }
     }
   },
+  "surfing": {
+    "title": "Surfing 101: złap falę",
+    "subtitle": "Podstawy, gdyby skusiły cię plaże Porto",
+    "steps": {
+      "paddle": { "title": "Wiosłowanie", "description": "Leż płasko, wiosłuj, żeby dopasować się do prędkości fali." },
+      "pop-up": { "title": "Wstawanie", "description": "Jeden ruch: ręce pchają, stopy lądują — przednia noga do przodu, ugięte kolana." },
+      "stance": { "title": "Pozycja", "description": "Ciężar na środku, wzrok przed siebie, ręce na boki dla równowagi." },
+      "ride": { "title": "Jazda", "description": "Steruj przenoszeniem ciężaru; zjedź z fali, zanim się załamie." }
+    },
+    "tipsTitle": "Zanim wypłyniesz",
+    "tips": {
+      "wetsuit": "Załóż piankę — Atlantyk ma ~18°C nawet we wrześniu.",
+      "board": "Zacznij od deski piankowej — łagodniejsza, łatwiej na niej wstać.",
+      "etiquette": "Jedna fala, jeden surfer — nie wjeżdżaj komuś, kto już jedzie.",
+      "leash": "Zawsze używaj leasha — luźna deska to zagrożenie dla innych w wodzie.",
+      "conditions": "Sprawdź warunki i prądy rozrywające przed wypłynięciem.",
+      "lesson": "Pierwsza lekcja jest warta więcej niż dzień zgadywania — lokalne szkoły wypożyczają też sprzęt."
+    },
+    "spot": {
+      "title": "Najbliższa plaża surfingowa: Matosinhos",
+      "description": "~20 min od centrum metrem (linia A do Mercado). Stabilny beach break, kilka szkół dla początkujących."
+    }
+  },
   "culture": {
     "categories": {
       "eat": "Jedzenie",

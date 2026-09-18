@@ -32,7 +32,7 @@ const route = useRoute()
   display: flex;
   background: var(--color-surface);
   border-top: 1px solid var(--color-border);
-  padding-bottom: var(--safe-bottom);
+  padding-bottom: calc(var(--safe-bottom) + 8px);
   z-index: 20;
 }
 
@@ -42,7 +42,7 @@ const route = useRoute()
   flex-direction: column;
   align-items: center;
   gap: 2px;
-  padding: 10px 0 8px;
+  padding: 10px 0 10px;
   font-size: 12px;
   font-weight: 600;
   color: var(--color-muted);

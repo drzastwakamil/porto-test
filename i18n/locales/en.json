@@ -169,6 +169,29 @@
       "capital-of-culture": { "title": "European Capital of Culture", "note": "Porto's year in the spotlight — it's also how the city got **Casa da Música**." }
     }
   },
+  "surfing": {
+    "title": "Surfing 101: catch a wave",
+    "subtitle": "The basics, in case Porto's beaches tempt you",
+    "steps": {
+      "paddle": { "title": "Paddle", "description": "Lie flat, paddle to match the wave's speed." },
+      "pop-up": { "title": "Pop up", "description": "One motion: hands push, feet land — front foot forward, knees bent." },
+      "stance": { "title": "Stance", "description": "Weight centred, eyes up, arms out for balance." },
+      "ride": { "title": "Ride", "description": "Steer by shifting your weight; kick out before it closes." }
+    },
+    "tipsTitle": "Tips before you paddle out",
+    "tips": {
+      "wetsuit": "Wear a wetsuit — the Atlantic stays ~18°C even in September.",
+      "board": "Start on a foam board — softer, more forgiving, easier to pop up on.",
+      "etiquette": "One wave, one surfer — don't drop in on someone already riding.",
+      "leash": "Always use a leash — a loose board is a hazard to everyone nearby.",
+      "conditions": "Check conditions and rip currents before paddling out.",
+      "lesson": "A first lesson beats a day of guessing — local schools rent gear too."
+    },
+    "spot": {
+      "title": "Nearest surf beach: Matosinhos",
+      "description": "~20 min from the centre by metro (Line A to Mercado). Consistent beach break, several schools for beginners."
+    }
+  },
   "culture": {
     "categories": {
       "eat": "Eat",
