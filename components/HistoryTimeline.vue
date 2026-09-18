@@ -9,9 +9,19 @@
           <span class="timeline__line" />
         </div>
         <div class="timeline__content card">
-          <div class="timeline__year">{{ event.year }}</div>
-          <div class="timeline__event-title">{{ $t(`history.events.${event.id}.title`) }}</div>
-          <div class="timeline__note">{{ $t(`history.events.${event.id}.note`) }}</div>
+          <img
+            v-if="event.image"
+            :src="event.image"
+            :alt="$t(`history.events.${event.id}.title`)"
+            class="timeline__image"
+            loading="lazy"
+            @error="onImageError"
+          />
+          <div class="timeline__body">
+            <div class="timeline__year">{{ event.year }}</div>
+            <div class="timeline__event-title">{{ $t(`history.events.${event.id}.title`) }}</div>
+            <MarkdownText class="timeline__note" :text="$t(`history.events.${event.id}.note`)" />
+          </div>
         </div>
       </li>
     </ol>
@@ -45,6 +55,11 @@ onMounted(() => {
   )
   itemRefs.value.forEach((el) => el && observer.observe(el))
 })
+
+function onImageError(event: Event) {
+  const target = event.target as HTMLElement
+  target.style.display = 'none'
+}
 </script>
 
 <style scoped>
@@ -121,6 +136,16 @@ onMounted(() => {
 .timeline__content {
   flex: 1;
   padding: 10px 14px;
+  overflow: hidden;
+}
+
+.timeline__image {
+  display: block;
+  width: calc(100% + 28px);
+  margin: -10px -14px 10px;
+  height: 140px;
+  object-fit: cover;
+  background: var(--color-border);
 }
 
 .timeline__year {

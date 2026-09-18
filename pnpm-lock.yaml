@@ -20,6 +20,9 @@ importers:
       '@oxc-transform/binding-wasm32-wasi':
         specifier: 0.143.0
         version: 0.143.0
+      marked:
+        specifier: ^18.0.13
+        version: 18.0.13
       nuxt:
         specifier: ^3.21.11
         version: 3.21.11(@oxc-project/types@0.143.0)(@vue/compiler-sfc@3.5.43)(cac@6.7.14)(db0@0.3.4)(esbuild@0.28.2)(eslint@10.10.0(jiti@2.7.0))(ioredis@5.11.1)(magicast@0.5.5)(optionator@0.9.4)(rollup-plugin-visualizer@7.1.1(rollup@4.63.3))(rollup@4.63.3)(srvx@0.11.22)(terser@5.51.2)(typescript@6.0.3)(vite@7.3.6(jiti@2.7.0)(terser@5.51.2)(yaml@2.9.1))(yaml@2.9.1)
@@ -3667,6 +3670,11 @@ packages:
 
   magicast@0.5.5:
     resolution: {integrity: sha512-UicdXN8zQ3JHlxVq+28afMXPr1z7WNY6+7EJnzTdQWkTAlMLF5fNCCKxJHBQwGaNGR11581EiQmQzx73+MvszA==}
+
+  marked@18.0.13:
+    resolution: {integrity: sha512-xTxVzZsBFwunP6HDmtBkabUQEYArnP7/rMDGmPj9SlrKlQ4i8MdYVow+nJL0eOqwpUqhzBoTBRADGN6uYwPyOw==}
+    engines: {node: '>= 20'}
+    hasBin: true
 
   math-intrinsics@1.1.0:
     resolution: {integrity: sha512-/IXtbwEk5HTPyEwyKX6hGkYXxM9nbj64B+ilVJnC/R6B0pH5G4V3b0pVbL7DBj4tkhBAppbQUlf6F6Xl9LHu1g==}
@@ -9144,6 +9152,8 @@ snapshots:
       '@babel/parser': 7.29.8
       '@babel/types': 7.29.8
       source-map-js: 1.2.1
+
+  marked@18.0.13: {}
 
   math-intrinsics@1.1.0: {}
 

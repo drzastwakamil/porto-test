@@ -21,6 +21,8 @@
         </li>
       </ul>
     </section>
+
+    <p class="attribution">{{ $t('guide.photoAttribution') }}</p>
   </div>
 </template>
 
@@ -79,5 +81,12 @@ const sections = computed(() =>
 .phrases__translation {
   color: var(--color-muted);
   text-align: right;
+}
+
+.attribution {
+  font-size: 11px;
+  color: var(--color-muted);
+  text-align: center;
+  margin-top: 16px;
 }
 </style>

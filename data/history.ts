@@ -1,6 +1,7 @@
 export interface HistoryEvent {
   id: string
   year: string
+  image?: string
 }
 
 export const history: HistoryEvent[] = [

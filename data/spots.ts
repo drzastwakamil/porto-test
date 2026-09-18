@@ -7,6 +7,7 @@ export interface Spot {
   price?: string
   mapQuery: string
   day?: 'fri' | 'sat' | 'sun'
+  image?: string
 }
 
 export const spots: Spot[] = [

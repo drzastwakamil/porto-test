@@ -4,6 +4,7 @@ export interface CultureItem {
   id: string
   category: CultureCategory
   mapQuery?: string
+  image?: string
 }
 
 export const cultureCategoryOrder: CultureCategory[] = ['eat', 'drink', 'say', 'do', 'sport', 'music']
