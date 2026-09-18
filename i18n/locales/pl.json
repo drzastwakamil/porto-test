@@ -12,7 +12,8 @@
       "food": "Posiłek",
       "rest": "Odpoczynek",
       "travel": "Przejazd",
-      "urgent": "Nie spóźnij się"
+      "urgent": "Nie spóźnij się",
+      "booked": "Opłacone"
     },
     "category": {
       "sight": "Zabytek",
@@ -63,7 +64,7 @@
   "itinerary": {
     "progress": "{checked} / {total} zrobione",
     "days": {
-      "fri": { "label": "Piątek", "date": "18 wrz", "theme": "Historyczne centrum — najbardziej intensywny dzień, załóż wygodne buty" },
+      "fri": { "label": "Piątek", "date": "18 wrz", "theme": "Historyczne centrum + degustacja wina w Gai — najbardziej intensywny dzień, załóż wygodne buty" },
       "sat": { "label": "Sobota", "date": "19 wrz", "theme": "Serralves + Clérigos + Bolsa + Gaia — celowo spokojny początek" },
       "sun": { "label": "Niedziela", "date": "20 wrz", "theme": "Lekki dzień + mecz FC Porto – Benfica, 20:30" },
       "mon": { "label": "Poniedziałek", "date": "21 wrz", "theme": "Wylot" }
@@ -73,9 +74,7 @@
       "fri-02": { "title": "Apartament — zostawienie bagażu", "note": "Szybki odpoczynek przed wyjściem" },
       "fri-03": { "title": "Katedra Sé" },
       "fri-04": { "title": "Igreja de São Lourenço / MASA", "note": "Piątek jest najlepszym dniem na tę wizytę" },
-      "fri-05": { "title": "Miradouro da Igreja de São Lourenço" },
-      "fri-06": { "title": "Miradouro da Vitória" },
-      "fri-07": { "title": "Miradouro das Virtudes" },
+      "fri-06": { "title": "Miradouro da Vitória", "note": "Najlepszy z trzech punktów widokowych — pozostałe dwa odpadły, żeby zrobić miejsce na Gaię" },
       "fri-08": { "title": "Dworzec São Bento", "note": "Słynne malowidła z azulejos" },
       "fri-09": { "title": "Lunch", "note": "Bez długiego postoju" },
       "fri-10": { "title": "Igreja da Santíssima Trindade", "note": "W piątek otwarte do 17:00" },
@@ -84,10 +83,13 @@
       "fri-13": { "title": "Capela das Almas", "note": "Bezpłatnie, pt ~07:30–19:00" },
       "fri-14": { "title": "Igreja de Santo Ildefonso" },
       "fri-15": { "title": "Igreja do Carmo + plac" },
-      "fri-16": { "title": "Livraria Lello", "note": "Płatne, zarezerwuj wcześniej slot wejścia" },
+      "fri-16": { "title": "Livraria Lello", "note": "Opłacone — 3 bilety, wejście o 13:30" },
       "fri-17": { "title": "Torre dos Clérigos — tylko z zewnątrz", "note": "Wejście na wieżę zaplanowane na sobotę" },
+      "fri-cross-gaia": { "title": "Przejście do Vila Nova de Gaia", "note": "Przez Ponte Dom Luís I, dolny poziom" },
+      "fri-calem": { "title": "Winiarnia — Caves Cálem", "note": "Opłacone — 3 bilety, degustacja z przewodnikiem po angielsku" },
+      "fri-cross-back": { "title": "Powrót do Porto", "note": "Przez Ponte Dom Luís I" },
       "fri-18": { "title": "Igreja e Museu de São Francisco" },
-      "fri-19": { "title": "Cais da Ribeira", "note": "Ta pocztówkowa część nabrzeża" },
+      "fri-19": { "title": "Cais da Ribeira", "note": "Ta pocztówkowa część nabrzeża — jeszcze ładniejsza o zmierzchu" },
       "fri-20": { "title": "Elevador da Ribeira / funikular", "note": "Używamy jako skrótu pod górę" },
       "fri-21": { "title": "Kolacja i powrót do apartamentu", "note": "Ribeira malownicza, ale droższa — spróbuj ulicy w głąb miasta" },
       "sat-01": { "title": "Śniadanie", "note": "W apartamencie" },
@@ -96,13 +98,12 @@
       "sat-04": { "title": "Powrót pieszo", "note": "Bez dodatkowych atrakcji" },
       "sat-05": { "title": "Lunch", "note": "Dobry moment na francesinhę" },
       "sat-06": { "title": "Banco de Materiais", "note": "Bezpłatnie, 10:00–17:30" },
-      "sat-07": { "title": "Torre dos Clérigos + Museu", "note": "Zarezerwuj wcześniej" },
+      "sat-07": { "title": "Torre dos Clérigos + Museu", "note": "Opłacone — 3 bilety, kolejka priorytetowa" },
       "sat-08": { "title": "Palácio da Bolsa", "note": "Zwiedzanie tylko z przewodnikiem" },
       "sat-09": { "title": "Ribeira" },
       "sat-10": { "title": "Ponte Dom Luís I — dolny poziom" },
       "sat-11": { "title": "Cais de Gaia" },
       "sat-12": { "title": "O Coelho — Bordalo II", "note": "Instalacja plenerowa" },
-      "sat-13": { "title": "Winiarnia — np. Caves Cálem", "note": "Zwiedzanie i degustacja, zarezerwuj wcześniej" },
       "sat-14": { "title": "Teleférico de Gaia", "note": "Płatne, 10:00–20:00 w tym okresie" },
       "sat-15": { "title": "Serra do Pilar + punkt widokowy", "note": "Wnętrze klasztoru obecnie zamknięte" },
       "sat-16": { "title": "Ponte Dom Luís I — górny poziom" },
@@ -237,10 +238,10 @@
     "title": "Co zarezerwować",
     "notBooked": "Jeszcze niezarezerwowane",
     "items": {
-      "lello": { "title": "Livraria Lello", "note": "Slot wejścia" },
-      "clerigos": { "title": "Torre dos Clérigos", "note": "~14:20 w sobotę" },
+      "lello": { "title": "Livraria Lello", "note": "13:30 w piątek · 3 bilety" },
+      "clerigos": { "title": "Torre dos Clérigos", "note": "13:30 w sobotę · 3 bilety" },
       "bolsa": { "title": "Palácio da Bolsa", "note": "Zwiedzanie z przewodnikiem, ~15:10 w sobotę" },
-      "wine-cellar": { "title": "Degustacja w winiarni", "note": "~17:20 w sobotę" },
+      "wine-cellar": { "title": "Degustacja w winiarni", "note": "17:20 w piątek · 3 bilety" },
       "match-tickets": { "title": "Bilety FC Porto – Benfica", "note": "Niedziela 20:30" }
     }
   },
@@ -253,6 +254,7 @@
         "title": "Zasady, żeby plan był wygodny",
         "items": [
           "Piątek to najwięcej chodzenia — wygodne buty.",
+          "Degustacja wina jest teraz w piątek wieczorem (17:20), nie w sobotę — wciśnięta między zwiedzanie a kolację, przez przejście do Gai.",
           "Sobota celowo zaczyna się spokojnie (10:00–12:00 w Serralves).",
           "Wieża Clérigos jest w sobotę, bez pośpiechu w piątek.",
           "Niedziela płynnie prowadzi do meczu — bez osobnej wycieczki.",

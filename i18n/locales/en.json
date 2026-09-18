@@ -12,7 +12,8 @@
       "food": "Food",
       "rest": "Rest",
       "travel": "Travel",
-      "urgent": "Don't be late"
+      "urgent": "Don't be late",
+      "booked": "Booked"
     },
     "category": {
       "sight": "Sight",
@@ -63,7 +64,7 @@
   "itinerary": {
     "progress": "{checked} / {total} done",
     "days": {
-      "fri": { "label": "Friday", "date": "18 Sep", "theme": "Historic centre — the most intense day, wear comfortable shoes" },
+      "fri": { "label": "Friday", "date": "18 Sep", "theme": "Historic centre + a Gaia wine tasting — the most intense day, wear comfortable shoes" },
       "sat": { "label": "Saturday", "date": "19 Sep", "theme": "Serralves + Clérigos + Bolsa + Gaia — deliberately slow start" },
       "sun": { "label": "Sunday", "date": "20 Sep", "theme": "Light day + FC Porto – Benfica, 20:30" },
       "mon": { "label": "Monday", "date": "21 Sep", "theme": "Departure" }
@@ -73,9 +74,7 @@
       "fri-02": { "title": "Apartment — drop bags", "note": "Quick rest before heading out" },
       "fri-03": { "title": "Sé Cathedral" },
       "fri-04": { "title": "Igreja de São Lourenço / MASA", "note": "Friday is the best day for this" },
-      "fri-05": { "title": "Miradouro da Igreja de São Lourenço" },
-      "fri-06": { "title": "Miradouro da Vitória" },
-      "fri-07": { "title": "Miradouro das Virtudes" },
+      "fri-06": { "title": "Miradouro da Vitória", "note": "The best of the three viewpoints — the other two got cut to make room for Gaia" },
       "fri-08": { "title": "São Bento Station", "note": "Famous azulejo tile murals" },
       "fri-09": { "title": "Lunch", "note": "Don't linger too long" },
       "fri-10": { "title": "Igreja da Santíssima Trindade", "note": "Friday open until 17:00" },
@@ -84,10 +83,13 @@
       "fri-13": { "title": "Capela das Almas", "note": "Free, Fri ~07:30–19:00" },
       "fri-14": { "title": "Igreja de Santo Ildefonso" },
       "fri-15": { "title": "Igreja do Carmo + square" },
-      "fri-16": { "title": "Livraria Lello", "note": "Paid, book an entry slot in advance" },
+      "fri-16": { "title": "Livraria Lello", "note": "Booked — 3 tickets, 13:30 entry" },
       "fri-17": { "title": "Torre dos Clérigos — exterior only", "note": "Climbing the tower is on Saturday" },
+      "fri-cross-gaia": { "title": "Cross to Vila Nova de Gaia", "note": "Over Ponte Dom Luís I, lower deck" },
+      "fri-calem": { "title": "Wine cellar — Caves Cálem", "note": "Booked — 3 tickets, English tour + tasting" },
+      "fri-cross-back": { "title": "Cross back to Porto", "note": "Over Ponte Dom Luís I" },
       "fri-18": { "title": "Igreja e Museu de São Francisco" },
-      "fri-19": { "title": "Cais da Ribeira", "note": "The postcard stretch" },
+      "fri-19": { "title": "Cais da Ribeira", "note": "The postcard stretch — even better lit up at dusk" },
       "fri-20": { "title": "Elevador da Ribeira / funicular", "note": "Used as a shortcut back up" },
       "fri-21": { "title": "Dinner + back to the apartment", "note": "Ribeira's scenic but pricier — try a street inland" },
       "sat-01": { "title": "Breakfast", "note": "At the apartment" },
@@ -96,13 +98,12 @@
       "sat-04": { "title": "Walk back", "note": "No extra stops" },
       "sat-05": { "title": "Lunch", "note": "Good moment for a francesinha" },
       "sat-06": { "title": "Banco de Materiais", "note": "Free, 10:00–17:30" },
-      "sat-07": { "title": "Torre dos Clérigos + Museum", "note": "Book ahead" },
+      "sat-07": { "title": "Torre dos Clérigos + Museum", "note": "Booked — 3 tickets, priority queue" },
       "sat-08": { "title": "Palácio da Bolsa", "note": "Guided tour is mandatory" },
       "sat-09": { "title": "Ribeira" },
       "sat-10": { "title": "Ponte Dom Luís I — lower deck" },
       "sat-11": { "title": "Cais de Gaia" },
       "sat-12": { "title": "O Coelho — Bordalo II", "note": "Outdoor street art" },
-      "sat-13": { "title": "Wine cellar — e.g. Caves Cálem", "note": "Tour + tasting, book ahead" },
       "sat-14": { "title": "Teleférico de Gaia", "note": "Paid, 10:00–20:00 this time of year" },
       "sat-15": { "title": "Serra do Pilar + viewpoint", "note": "Monastery interior currently closed" },
       "sat-16": { "title": "Ponte Dom Luís I — upper deck" },
@@ -237,10 +238,10 @@
     "title": "Book ahead",
     "notBooked": "Not booked yet",
     "items": {
-      "lello": { "title": "Livraria Lello", "note": "Timed entry slot" },
-      "clerigos": { "title": "Torre dos Clérigos", "note": "~14:20 Saturday" },
+      "lello": { "title": "Livraria Lello", "note": "13:30 Friday · 3 tickets" },
+      "clerigos": { "title": "Torre dos Clérigos", "note": "13:30 Saturday · 3 tickets" },
       "bolsa": { "title": "Palácio da Bolsa", "note": "Guided tour, ~15:10 Saturday" },
-      "wine-cellar": { "title": "Wine cellar tasting", "note": "~17:20 Saturday" },
+      "wine-cellar": { "title": "Wine cellar tasting", "note": "17:20 Friday · 3 tickets" },
       "match-tickets": { "title": "FC Porto – Benfica tickets", "note": "Sunday 20:30" }
     }
   },
@@ -253,6 +254,7 @@
         "title": "Trip rules of thumb",
         "items": [
           "Friday is the most walking-heavy day — comfortable shoes.",
+          "Wine cellar tasting is Friday evening now (17:20), not Saturday — squeezed in via a Gaia crossing before dinner.",
           "Saturday starts slow on purpose (10:00–12:00 at Serralves).",
           "Clérigos Tower is Saturday, not rushed into Friday.",
           "Sunday flows straight into the match — no separate outing.",

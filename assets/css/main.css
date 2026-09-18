@@ -9,6 +9,7 @@
   --color-free: #2f7a4d;
   --color-paid: #b5542a;
   --color-urgent: #c62d2d;
+  --color-booked: #7c3aed;
   --radius: 14px;
   --nav-height: 64px;
   --safe-top: env(safe-area-inset-top, 0px);
@@ -27,6 +28,7 @@
     --color-free: #5fbf85;
     --color-paid: #e0895a;
     --color-urgent: #ff6b6b;
+    --color-booked: #b794f6;
   }
 }
 
@@ -119,6 +121,11 @@ p {
 .badge-urgent {
   background: rgba(200, 45, 45, 0.14);
   color: var(--color-urgent);
+}
+
+.badge-booked {
+  background: rgba(124, 58, 237, 0.14);
+  color: var(--color-booked);
 }
 
 .chip {
