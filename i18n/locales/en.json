@@ -2,6 +2,7 @@
   "nav": {
     "itinerary": "Itinerary",
     "explore": "Explore",
+    "culture": "Culture",
     "guide": "Guide"
   },
   "common": {
@@ -143,6 +144,41 @@
     "palacio-cristal": { "name": "Jardins do Palácio de Cristal", "hours": "08:00–21:00 in September", "why": "Sweeping garden terraces with river and city views, peacocks included." },
     "sentimentos": { "name": "Jardim dos Sentimentos", "why": "A quiet, less-visited corner within the same gardens." }
   },
+  "culture": {
+    "categories": {
+      "eat": "Eat",
+      "drink": "Drink",
+      "say": "Say & Ask",
+      "do": "Do",
+      "sport": "Football",
+      "music": "Music"
+    },
+    "items": {
+      "francesinha": { "title": "Francesinha", "note": "Porto's signature sandwich" },
+      "tripas": { "title": "Tripas à moda do Porto", "note": "Why locals are called \"tripeiros\"" },
+      "bacalhau-gomes-de-sa": { "title": "Bacalhau à Gomes de Sá" },
+      "bifana": { "title": "Bifana", "note": "Pork sandwich, quick and cheap" },
+      "caldo-verde": { "title": "Caldo verde", "note": "Kale soup, often with chouriço" },
+      "pastel-de-nata": { "title": "Pastéis de nata" },
+      "vinho-do-porto": { "title": "Port wine", "note": "Tawny, ruby, or white — try all three in Gaia" },
+      "vinho-verde": { "title": "Vinho Verde", "note": "Young, slightly sparkling, cheap everywhere" },
+      "super-bock": { "title": "Super Bock", "note": "The local beer, rival to Sagres" },
+      "bica": { "title": "Bica", "note": "Espresso, drunk standing at the counter" },
+      "tripeiro": { "title": "Tripeiro/a", "note": "What Porto locals call themselves" },
+      "obrigadinho": { "title": "Obrigadinho", "note": "Casual, warm \"thanks\"" },
+      "esta-bom": { "title": "Está bom?", "note": "\"Is it good?\" — ask after a bite" },
+      "cruzeiro-seis-pontes": { "title": "6-bridges Douro cruise", "note": "See Porto from the river" },
+      "perder-se-ribeira": { "title": "Get lost in Ribeira", "note": "On purpose, no map" },
+      "lello-cedo": { "title": "Livraria Lello, early", "note": "Before the queue forms" },
+      "cachecol": { "title": "Buy a scarf before the match", "note": "Blue and white" },
+      "o-classico": { "title": "O Clássico", "note": "Porto vs. Benfica — the rivalry that matters" },
+      "dragoes": { "title": "\"Dragões\"", "note": "Porto's nickname, from the club crest" },
+      "cores-estadio": { "title": "Wear blue and white", "note": "Skip red (Benfica) near the stadium" },
+      "fado": { "title": "Fado", "note": "Mournful, guitar-led, built on \"saudade\"" },
+      "amalia-rodrigues": { "title": "Amália Rodrigues", "note": "The name to know" },
+      "vira-fandango": { "title": "Vira / fandango", "note": "Real folk dance, but rare to stumble into" }
+    }
+  },
   "install": {
     "title": "Install this app",
     "hintAndroid": "Add it to your home screen for quick, full-screen access.",
@@ -159,7 +195,7 @@
           "Livraria Lello — reserve a timed entry slot.",
           "Torre dos Clérigos — Saturday, aim for ~14:20–14:30.",
           "Palácio da Bolsa — Saturday, guided tour around ~15:10–15:30.",
-          "Wine cellar tasting (e.g. Caves Cálem) — Saturday around 17:20.",
+          "Wine cellar tasting — Saturday ~17:20.",
           "FC Porto – Benfica — tickets and entry per the organiser.",
           "Keep a taxi/Uber option ready for the return after the match."
         ]
@@ -167,37 +203,37 @@
       "rules-of-thumb": {
         "title": "Trip rules of thumb",
         "items": [
-          "Friday is the most intense day of walking — comfortable shoes, keep viewpoint stops short.",
-          "Saturday deliberately starts slow (10:00–12:00 at Serralves).",
-          "Clérigos Tower was moved to Saturday so it isn't rushed on Friday.",
-          "The stadium isn't a separate outing — Sunday's plan flows straight into the match.",
+          "Friday is the most walking-heavy day — comfortable shoes.",
+          "Saturday starts slow on purpose (10:00–12:00 at Serralves).",
+          "Clérigos Tower is Saturday, not rushed into Friday.",
+          "Sunday flows straight into the match — no separate outing.",
           "No beaches or Matosinhos on this trip.",
-          "Serra do Pilar is viewpoint-only — the monastery interior is currently closed."
+          "Serra do Pilar: viewpoint only, monastery closed."
         ]
       },
       "money": {
         "title": "Currency & paying",
         "items": [
-          "Currency is the Euro (€).",
-          "Cards and contactless are widely accepted in Porto.",
-          "Small cafés and market stalls (like Bolhão) may prefer cash — keep some small notes and coins handy.",
-          "Most paid attractions on this trip are small amounts (€3–€15) — exact change speeds up the queue."
+          "Euro (€).",
+          "Cards/contactless widely accepted.",
+          "Small cafés/markets may want cash — carry coins.",
+          "Attractions are cheap (€3–€15) — exact change helps."
         ]
       },
       "tipping": {
         "title": "Tipping",
         "items": [
-          "Tipping is not obligatory in Portugal.",
-          "Rounding up the bill, or ~5–10% at a nice sit-down dinner, is generous and appreciated.",
-          "No need to tip for coffee or quick counter service."
+          "Not obligatory.",
+          "Round up, or ~5–10% at a sit-down dinner.",
+          "Skip it for coffee/counter service."
         ]
       },
       "getting-around": {
         "title": "Getting around",
         "items": [
-          "This plan is almost entirely on foot — comfortable shoes matter more than transit passes.",
-          "If you need the metro/tram/bus, Porto uses the rechargeable Andante card, sold at metro stations.",
-          "Taxis and Uber are reliable and are the planned way back after the Sunday match."
+          "Mostly on foot — comfortable shoes over transit passes.",
+          "Metro/tram/bus uses the Andante card, sold at stations.",
+          "Taxi/Uber for the post-match return."
         ]
       }
     }

@@ -2,6 +2,7 @@
   "nav": {
     "itinerary": "Plan",
     "explore": "Zwiedzaj",
+    "culture": "Kultura",
     "guide": "Poradnik"
   },
   "common": {
@@ -143,6 +144,41 @@
     "palacio-cristal": { "name": "Jardins do Palácio de Cristal", "hours": "08:00–21:00 we wrześniu", "why": "Rozległe tarasowe ogrody z widokiem na rzekę i miasto, w tym pawie." },
     "sentimentos": { "name": "Jardim dos Sentimentos", "why": "Spokojniejszy, mniej odwiedzany zakątek tych samych ogrodów." }
   },
+  "culture": {
+    "categories": {
+      "eat": "Jedzenie",
+      "drink": "Picie",
+      "say": "Powiedz / zapytaj",
+      "do": "Zrób",
+      "sport": "Piłka nożna",
+      "music": "Muzyka"
+    },
+    "items": {
+      "francesinha": { "title": "Francesinha", "note": "Wizytówka kuchni Porto" },
+      "tripas": { "title": "Tripas à moda do Porto", "note": "Stąd przydomek \"tripeiros\"" },
+      "bacalhau-gomes-de-sa": { "title": "Bacalhau à Gomes de Sá" },
+      "bifana": { "title": "Bifana", "note": "Kanapka z wieprzowiną, szybko i tanio" },
+      "caldo-verde": { "title": "Caldo verde", "note": "Zupa z jarmużu, często z chouriço" },
+      "pastel-de-nata": { "title": "Pastel de nata" },
+      "vinho-do-porto": { "title": "Wino porto", "note": "Tawny, ruby albo białe — spróbuj wszystkich w Gai" },
+      "vinho-verde": { "title": "Vinho Verde", "note": "Młode, lekko musujące, tanie wszędzie" },
+      "super-bock": { "title": "Super Bock", "note": "Lokalne piwo, rywal Sagres" },
+      "bica": { "title": "Bica", "note": "Espresso, pite na stojąco przy barze" },
+      "tripeiro": { "title": "Tripeiro/a", "note": "Tak mieszkańcy Porto mówią o sobie" },
+      "obrigadinho": { "title": "Obrigadinho", "note": "Nieformalne, ciepłe \"dzięki\"" },
+      "esta-bom": { "title": "Está bom?", "note": "\"Smakuje?\" — pytanie po pierwszym kęsie" },
+      "cruzeiro-seis-pontes": { "title": "Rejs sześcioma mostami", "note": "Zobacz Porto od strony rzeki" },
+      "perder-se-ribeira": { "title": "Zgub się w Ribeirze", "note": "Celowo, bez mapy" },
+      "lello-cedo": { "title": "Livraria Lello wcześnie rano", "note": "Zanim zrobi się kolejka" },
+      "cachecol": { "title": "Kup szalik przed meczem", "note": "Niebiesko-biały" },
+      "o-classico": { "title": "O Clássico", "note": "Porto – Benfica, najważniejszy rywal" },
+      "dragoes": { "title": "\"Dragões\"", "note": "Przydomek Porto, od herbu klubu" },
+      "cores-estadio": { "title": "Ubierz się na niebiesko-biało", "note": "Unikaj czerwieni (Benfica) w pobliżu stadionu" },
+      "fado": { "title": "Fado", "note": "Nostalgiczne, przy gitarze, w duchu \"saudade\"" },
+      "amalia-rodrigues": { "title": "Amália Rodrigues", "note": "Nazwisko, które warto znać" },
+      "vira-fandango": { "title": "Vira / fandango", "note": "Prawdziwy taniec ludowy, ale rzadko widziany przez turystów" }
+    }
+  },
   "install": {
     "title": "Zainstaluj aplikację",
     "hintAndroid": "Dodaj ją do ekranu głównego, aby mieć szybki dostęp na pełnym ekranie.",
@@ -159,7 +195,7 @@
           "Livraria Lello — zarezerwuj konkretny slot wejścia.",
           "Torre dos Clérigos — sobota, celuj w ~14:20–14:30.",
           "Palácio da Bolsa — sobota, zwiedzanie z przewodnikiem około ~15:10–15:30.",
-          "Degustacja w winiarni (np. Caves Cálem) — sobota, około 17:20.",
+          "Degustacja w winiarni — sobota, ~17:20.",
           "Mecz FC Porto – Benfica — bilety i wejście zgodnie z zasadami organizatora.",
           "Zostaw sobie opcję taxi/Uber na powrót po meczu."
         ]
@@ -167,37 +203,37 @@
       "rules-of-thumb": {
         "title": "Zasady, żeby plan był wygodny",
         "items": [
-          "Piątek jest najbardziej intensywnym dniem chodzenia — wygodne buty, krótkie postoje w punktach widokowych.",
+          "Piątek to najwięcej chodzenia — wygodne buty.",
           "Sobota celowo zaczyna się spokojnie (10:00–12:00 w Serralves).",
-          "Wieżę Clérigos przeniesiono na sobotę, żeby nie robić jej w pośpiechu w piątek.",
-          "Stadion nie jest osobnym punktem zwiedzania — w niedzielę plan płynnie prowadzi do meczu.",
+          "Wieża Clérigos jest w sobotę, bez pośpiechu w piątek.",
+          "Niedziela płynnie prowadzi do meczu — bez osobnej wycieczki.",
           "Brak plaż i Matosinhos w tym planie.",
-          "Serra do Pilar to tylko punkt widokowy — wnętrze klasztoru jest obecnie zamknięte."
+          "Serra do Pilar: tylko punkt widokowy, klasztor zamknięty."
         ]
       },
       "money": {
         "title": "Waluta i płatności",
         "items": [
-          "Walutą jest euro (€).",
-          "Karty i płatności zbliżeniowe są w Porto powszechnie akceptowane.",
-          "Małe kawiarnie i stragany (np. na Bolhão) mogą preferować gotówkę — miej przy sobie drobne.",
-          "Większość płatnych atrakcji w tym planie to niewielkie kwoty (€3–€15) — odliczona gotówka przyspiesza kolejkę."
+          "Euro (€).",
+          "Karty/zbliżeniowe powszechnie akceptowane.",
+          "Małe kawiarnie/stragany wolą gotówkę — miej drobne.",
+          "Atrakcje są tanie (€3–€15) — drobne przyspieszają kolejkę."
         ]
       },
       "tipping": {
         "title": "Napiwki",
         "items": [
-          "Napiwki nie są w Portugalii obowiązkowe.",
-          "Zaokrąglenie rachunku lub ~5–10% przy dobrej kolacji w restauracji jest hojnym i mile widzianym gestem.",
-          "Przy kawie lub szybkiej obsłudze przy ladzie napiwek nie jest potrzebny."
+          "Nieobowiązkowe.",
+          "Zaokrąglenie lub ~5–10% przy kolacji w restauracji.",
+          "Przy kawie/ladzie napiwek zbędny."
         ]
       },
       "getting-around": {
         "title": "Poruszanie się po mieście",
         "items": [
-          "Ten plan realizujemy niemal wyłącznie pieszo — wygodne buty liczą się bardziej niż bilety komunikacji.",
-          "Jeśli potrzebujesz metra/tramwaju/autobusu, Porto korzysta z doładowywanej karty Andante, do kupienia na stacjach metra.",
-          "Taksówki i Uber są niezawodne i to nimi planujemy wrócić po niedzielnym meczu."
+          "Głównie pieszo — wygodne buty ważniejsze niż bilety.",
+          "Metro/tramwaj/autobus: karta Andante, do kupienia na stacjach.",
+          "Taxi/Uber na powrót po meczu."
         ]
       }
     }

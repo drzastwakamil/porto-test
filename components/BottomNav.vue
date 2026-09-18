@@ -8,6 +8,10 @@
       <span class="bottom-nav__icon">📍</span>
       <span>{{ $t('nav.explore') }}</span>
     </NuxtLink>
+    <NuxtLink to="/culture" class="bottom-nav__item" :class="{ active: route.path.startsWith('/culture') }">
+      <span class="bottom-nav__icon">🎭</span>
+      <span>{{ $t('nav.culture') }}</span>
+    </NuxtLink>
     <NuxtLink to="/guide" class="bottom-nav__item" :class="{ active: route.path.startsWith('/guide') }">
       <span class="bottom-nav__icon">💡</span>
       <span>{{ $t('nav.guide') }}</span>
