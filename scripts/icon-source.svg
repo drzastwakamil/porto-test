@@ -1,0 +1,33 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <rect width="512" height="512" fill="#1b4b66" />
+  <!-- Dom Luis I bridge arch -->
+  <path
+    d="M 96 320 A 160 160 0 0 1 416 320"
+    fill="none"
+    stroke="#f4e3c1"
+    stroke-width="16"
+    stroke-linecap="round"
+  />
+  <!-- deck -->
+  <line x1="76" y1="330" x2="436" y2="330" stroke="#f4e3c1" stroke-width="14" stroke-linecap="round" />
+  <!-- support lines -->
+  <line x1="176" y1="330" x2="176" y2="270" stroke="#f4e3c1" stroke-width="8" stroke-linecap="round" />
+  <line x1="256" y1="330" x2="256" y2="230" stroke="#f4e3c1" stroke-width="8" stroke-linecap="round" />
+  <line x1="336" y1="330" x2="336" y2="270" stroke="#f4e3c1" stroke-width="8" stroke-linecap="round" />
+  <!-- river waves -->
+  <path
+    d="M 66 380 Q 106 360 146 380 T 226 380 T 306 380 T 386 380 T 446 380"
+    fill="none"
+    stroke="#e08a3e"
+    stroke-width="14"
+    stroke-linecap="round"
+  />
+  <path
+    d="M 66 416 Q 106 396 146 416 T 226 416 T 306 416 T 386 416 T 446 416"
+    fill="none"
+    stroke="#e08a3e"
+    stroke-width="14"
+    stroke-linecap="round"
+    opacity="0.6"
+  />
+</svg>
