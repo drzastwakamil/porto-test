@@ -23,13 +23,21 @@
       >
         {{ $t(`common.filters.${option.key}`) }}
       </button>
+      <button
+        type="button"
+        class="chip"
+        :class="{ active: favoritesOnly }"
+        @click="$emit('update:favoritesOnly', !favoritesOnly)"
+      >
+        ★ {{ $t('common.filters.favorites') }}
+      </button>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-defineProps<{ category: string; cost: string }>()
-defineEmits<{ 'update:category': [value: string]; 'update:cost': [value: string] }>()
+defineProps<{ category: string; cost: string; favoritesOnly: boolean }>()
+defineEmits<{ 'update:category': [value: string]; 'update:cost': [value: string]; 'update:favoritesOnly': [value: boolean] }>()
 
 const categoryOptions = [
   { value: 'all', key: 'all' },

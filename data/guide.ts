@@ -1,4 +1,4 @@
-export const guideSectionIds = ['book-ahead', 'rules-of-thumb', 'money', 'tipping', 'getting-around'] as const
+export const guideSectionIds = ['rules-of-thumb', 'money', 'tipping', 'getting-around', 'essentials'] as const
 
 export interface Phrase {
   pt: string

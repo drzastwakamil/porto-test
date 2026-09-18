@@ -8,6 +8,7 @@
             {{ spot.free ? $t('common.status.free') : spot.price || $t('common.status.paid') }}
           </span>
           <span class="chip spot__category">{{ $t(`common.category.${spot.category}`) }}</span>
+          <span v-if="spot.day" class="chip spot__day">{{ $t(`common.dayShort.${spot.day}`) }}</span>
         </div>
       </div>
       <button

@@ -1,4 +1,4 @@
-export type ItineraryStatus = 'free' | 'paid' | 'food' | 'rest' | 'travel'
+export type ItineraryStatus = 'free' | 'paid' | 'food' | 'rest' | 'travel' | 'urgent'
 
 export interface ItineraryItem {
   id: string
@@ -80,11 +80,11 @@ export const itinerary: ItineraryDay[] = [
       { id: 'sun-10', time: '~19:00', status: 'travel' },
       { id: 'sun-11', time: '20:30–~22:30', status: 'paid', mapQuery: 'Estádio do Dragão, Porto, Portugal' },
       { id: 'sun-12', time: '', status: 'travel' },
-      { id: 'sun-13', time: '~01:30–02:00', status: 'travel' }
+      { id: 'sun-13', time: '~01:30–02:00', status: 'urgent' }
     ]
   },
   {
     id: 'mon',
-    items: [{ id: 'mon-01', time: '04:00', status: 'travel' }]
+    items: [{ id: 'mon-01', time: '04:00', status: 'urgent' }]
   }
 ]

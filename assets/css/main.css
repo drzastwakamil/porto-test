@@ -8,10 +8,26 @@
   --color-border: #e5e0d5;
   --color-free: #2f7a4d;
   --color-paid: #b5542a;
+  --color-urgent: #c62d2d;
   --radius: 14px;
   --nav-height: 64px;
   --safe-top: env(safe-area-inset-top, 0px);
   --safe-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: #12181d;
+    --color-surface: #1c252c;
+    --color-primary: #6fb3d2;
+    --color-accent: #f0a75c;
+    --color-text: #eef1f3;
+    --color-muted: #9aa5ad;
+    --color-border: #2c3740;
+    --color-free: #5fbf85;
+    --color-paid: #e0895a;
+    --color-urgent: #ff6b6b;
+  }
 }
 
 * {
@@ -97,6 +113,11 @@ p {
 .badge-travel {
   background: rgba(27, 75, 102, 0.12);
   color: var(--color-primary);
+}
+
+.badge-urgent {
+  background: rgba(200, 45, 45, 0.14);
+  color: var(--color-urgent);
 }
 
 .chip {

@@ -6,8 +6,10 @@
     <CategoryFilter
       :category="category"
       :cost="cost"
+      :favorites-only="favoritesOnly"
       @update:category="category = $event"
       @update:cost="cost = $event"
+      @update:favorites-only="favoritesOnly = $event"
     />
 
     <ul class="spot-list">
@@ -22,15 +24,18 @@
 import { spots } from '~/data/spots'
 
 const { locale } = useI18n()
+const { isFavorite } = useFavorites()
 
 const category = ref('all')
 const cost = ref('all')
+const favoritesOnly = ref(false)
 
 const filteredSpots = computed(() =>
   spots.filter((spot) => {
     if (category.value !== 'all' && spot.category !== category.value) return false
     if (cost.value === 'free' && !spot.free) return false
     if (cost.value === 'paid' && spot.free) return false
+    if (favoritesOnly.value && !isFavorite(spot.id)) return false
     return true
   })
 )

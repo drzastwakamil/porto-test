@@ -8,7 +8,8 @@ export default defineNuxtConfig({
     head: {
       link: [{ rel: 'apple-touch-icon', href: '/icons/icon-192.png' }],
       meta: [
-        { name: 'theme-color', content: '#1b4b66' },
+        { name: 'theme-color', content: '#1b4b66', media: '(prefers-color-scheme: light)' },
+        { name: 'theme-color', content: '#12181d', media: '(prefers-color-scheme: dark)' },
         { name: 'apple-mobile-web-app-capable', content: 'yes' },
         { name: 'apple-mobile-web-app-status-bar-style', content: 'black-translucent' }
       ]

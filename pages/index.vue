@@ -2,7 +2,13 @@
   <div class="page">
     <header class="hero">
       <h1>{{ trip.title }}</h1>
-      <p class="hero__dates">{{ $t('trip.dateRange') }}</p>
+      <div class="hero__row">
+        <p class="hero__dates">{{ $t('trip.dateRange') }}</p>
+        <button type="button" class="hero__share" @click="share">
+          <span v-if="shareState === 'copied'">{{ $t('common.linkCopied') }}</span>
+          <span v-else>{{ $t('common.share') }}</span>
+        </button>
+      </div>
     </header>
 
     <section class="essentials card">
@@ -21,7 +27,7 @@
           <div class="essentials__note">{{ $t('trip.arrivalNote') }}</div>
         </div>
       </div>
-      <div class="essentials__row">
+      <div class="essentials__row" :class="{ 'essentials__row--urgent': isTripEndingToday }">
         <span class="essentials__label">{{ $t('trip.departureLabel') }}</span>
         <div>
           <div>{{ $t('trip.departureDate') }} · {{ trip.departure.flightTime }}</div>
@@ -44,7 +50,20 @@
       <span class="progress__label">{{ $t('itinerary.progress', { checked: checkedCount, total: totalCount }) }}</span>
     </div>
 
-    <ItineraryDay v-for="day in itinerary" :key="day.id" :day="day" />
+    <div class="day-tabs">
+      <button
+        v-for="day in itinerary"
+        :key="day.id"
+        type="button"
+        class="chip day-tabs__tab"
+        :class="{ active: selectedDayId === day.id }"
+        @click="selectedDayId = day.id"
+      >
+        {{ $t(`itinerary.days.${day.id}.label`) }}
+      </button>
+    </div>
+
+    <ItineraryDay v-if="selectedDay" :day="selectedDay" />
   </div>
 </template>
 
@@ -52,16 +71,53 @@
 import { trip } from '~/data/trip'
 import { itinerary } from '~/data/itinerary'
 import { buildGoogleMapsUrl } from '~/utils/maps'
+import { detectTodayDayId } from '~/utils/tripDates'
 
+const { t } = useI18n()
 const { checkedCount, totalCount } = useItineraryState()
+
+const selectedDayId = ref(detectTodayDayId())
+const selectedDay = computed(() => itinerary.find((day) => day.id === selectedDayId.value))
+const isTripEndingToday = computed(() => selectedDayId.value === 'mon')
+
 const progressPercent = computed(() => (totalCount ? Math.round((checkedCount.value / totalCount) * 100) : 0))
 const accommodationMapUrl = buildGoogleMapsUrl(trip.accommodation.mapQuery)
 const matchMapUrl = buildGoogleMapsUrl(trip.match.mapQuery)
+
+const shareState = ref<'idle' | 'copied'>('idle')
+
+async function share() {
+  const shareData = { title: trip.title, text: t('trip.dateRange'), url: window.location.href }
+  try {
+    if (navigator.share) {
+      await navigator.share(shareData)
+      return
+    }
+  } catch {
+    // user cancelled or share failed — fall through to clipboard
+  }
+  try {
+    await navigator.clipboard.writeText(window.location.href)
+    shareState.value = 'copied'
+    setTimeout(() => {
+      shareState.value = 'idle'
+    }, 2000)
+  } catch {
+    // clipboard unavailable — nothing more we can do
+  }
+}
 </script>
 
 <style scoped>
 .hero {
   margin-bottom: 16px;
+}
+
+.hero__row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
 }
 
 .hero h1 {
@@ -74,6 +130,19 @@ const matchMapUrl = buildGoogleMapsUrl(trip.match.mapQuery)
   font-size: 14px;
 }
 
+.hero__share {
+  flex-shrink: 0;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  padding: 8px 14px;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-top: 4px;
+  white-space: nowrap;
+}
+
 .essentials {
   margin-bottom: 20px;
   display: flex;
@@ -84,6 +153,14 @@ const matchMapUrl = buildGoogleMapsUrl(trip.match.mapQuery)
 .essentials__row {
   display: flex;
   gap: 12px;
+  border-radius: 10px;
+}
+
+.essentials__row--urgent {
+  margin: -8px;
+  padding: 8px;
+  background: rgba(181, 84, 42, 0.1);
+  border: 1px solid rgba(181, 84, 42, 0.3);
 }
 
 .essentials__label {
@@ -112,7 +189,7 @@ const matchMapUrl = buildGoogleMapsUrl(trip.match.mapQuery)
   display: flex;
   align-items: center;
   gap: 10px;
-  margin-bottom: 8px;
+  margin-bottom: 16px;
 }
 
 .progress__bar {
@@ -133,6 +210,19 @@ const matchMapUrl = buildGoogleMapsUrl(trip.match.mapQuery)
   font-size: 12px;
   font-weight: 600;
   color: var(--color-muted);
+  white-space: nowrap;
+}
+
+.day-tabs {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  margin-bottom: 4px;
+  padding-bottom: 4px;
+}
+
+.day-tabs__tab {
+  flex-shrink: 0;
   white-space: nowrap;
 }
 </style>

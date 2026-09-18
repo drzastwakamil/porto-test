@@ -1,6 +1,7 @@
 <template>
   <div class="page">
     <h1 class="page__title">{{ $t('nav.culture') }}</h1>
+    <HistoryTimeline />
     <CultureSection
       v-for="category in cultureCategoryOrder"
       :key="category"

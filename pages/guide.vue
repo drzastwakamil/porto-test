@@ -3,6 +3,8 @@
     <h1 class="page__title">{{ $t('nav.guide') }}</h1>
     <p class="page__subtitle">{{ $t('guide.subtitle') }}</p>
 
+    <BookingChecklist />
+
     <GuideSection
       v-for="section in sections"
       :key="section.id"

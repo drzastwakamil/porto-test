@@ -11,7 +11,8 @@
       "paid": "Płatne",
       "food": "Posiłek",
       "rest": "Odpoczynek",
-      "travel": "Przejazd"
+      "travel": "Przejazd",
+      "urgent": "Nie spóźnij się"
     },
     "category": {
       "sight": "Zabytek",
@@ -22,6 +23,8 @@
     },
     "openInMaps": "Otwórz w Mapach ↗",
     "hours": "Godziny",
+    "share": "Udostępnij",
+    "linkCopied": "Skopiowano link!",
     "map": "Mapa ↗",
     "noSpotsMatch": "Żadne miejsce nie pasuje do wybranych filtrów.",
     "filters": {
@@ -33,7 +36,13 @@
       "experience": "Atrakcje",
       "anyPrice": "Dowolna cena",
       "free": "Bezpłatne",
-      "paid": "Płatne"
+      "paid": "Płatne",
+      "favorites": "Ulubione"
+    },
+    "dayShort": {
+      "fri": "Pt",
+      "sat": "Sob",
+      "sun": "Nd"
     }
   },
   "trip": {
@@ -79,7 +88,7 @@
       "fri-18": { "title": "Igreja e Museu de São Francisco" },
       "fri-19": { "title": "Cais da Ribeira", "note": "Ta pocztówkowa część nabrzeża" },
       "fri-20": { "title": "Elevador da Ribeira / funikular", "note": "Używamy jako skrótu pod górę" },
-      "fri-21": { "title": "Kolacja i powrót do apartamentu", "note": "Koniec zwiedzania na dziś" },
+      "fri-21": { "title": "Kolacja i powrót do apartamentu", "note": "Ribeira malownicza, ale droższa — spróbuj ulicy w głąb miasta" },
       "sat-01": { "title": "Śniadanie", "note": "W apartamencie" },
       "sat-02": { "title": "Wyjście do Serralves", "note": "Pieszo, ok. 45–50 min" },
       "sat-03": { "title": "Serralves", "note": "Spokojny blok: park + muzeum / Treetop Walk" },
@@ -97,7 +106,7 @@
       "sat-15": { "title": "Serra do Pilar + punkt widokowy", "note": "Wnętrze klasztoru obecnie zamknięte" },
       "sat-16": { "title": "Ponte Dom Luís I — górny poziom" },
       "sat-17": { "title": "Powrót do apartamentu", "note": "Odpoczynek" },
-      "sat-18": { "title": "Kolacja", "note": "Lekka" },
+      "sat-18": { "title": "Kolacja", "note": "Lekka — Baixa tańsza niż nabrzeże" },
       "sun-01": { "title": "Śniadanie", "note": "W apartamencie" },
       "sun-02": { "title": "Spacer do Jardins do Palácio de Cristal" },
       "sun-03": { "title": "Jardins do Palácio de Cristal", "note": "Bezpłatnie, 08:00–21:00 we wrześniu" },
@@ -105,7 +114,7 @@
       "sun-05": { "title": "Powrót / spacer", "note": "Bez kolejnych atrakcji" },
       "sun-06": { "title": "Lunch", "note": "Lekki lub średni" },
       "sun-07": { "title": "Odpoczynek", "note": "Celowy bufor przed meczem" },
-      "sun-08": { "title": "Wczesna kolacja", "note": "Nie tuż przed wejściem na stadion" },
+      "sun-08": { "title": "Wczesna kolacja", "note": "Coś szybkiego przy Bolhão przed marszem na Dragão" },
       "sun-09": { "title": "Wyjście na Estádio do Dragão", "note": "Lepiej wyjść wcześniej" },
       "sun-10": { "title": "Na stadionie", "note": "Bufor na wejście i kontrolę" },
       "sun-11": { "title": "FC Porto – Benfica" },
@@ -115,12 +124,12 @@
     }
   },
   "spots": {
-    "se": { "name": "Katedra Sé", "hours": "09:00–18:30 (wieża do 18:00)", "why": "Katedra Porto z widokiem na dachy Ribeiry." },
+    "se": { "name": "Katedra Sé", "hours": "09:00–18:30 (wieża do 18:00)", "why": "Romańska u podstaw, potem barokowa — z widokiem na dachy Ribeiry." },
     "sao-lourenco": { "name": "Igreja de São Lourenço / MASA", "hours": "Pt 09:00–16:30", "why": "Kościół połączony z muzeum sztuki współczesnej." },
     "mirador-sao-lourenco": { "name": "Miradouro da Igreja de São Lourenço", "why": "Szybki, bezpłatny punkt widokowy tuż przy São Lourenço." },
     "mirador-vitoria": { "name": "Miradouro da Vitória", "why": "Jeden z najlepszych klasycznych widoków na dachy i rzekę." },
     "mirador-virtudes": { "name": "Miradouro das Virtudes", "why": "Tarasowy ogród widokowy, dobry na krótki odpoczynek." },
-    "sao-bento": { "name": "Dworzec São Bento", "hours": "06:30–01:00", "why": "Czynny dworzec kolejowy z przepiękną halą pokrytą azulejos." },
+    "sao-bento": { "name": "Dworzec São Bento", "hours": "06:30–01:00", "why": "Czynny dworzec; azulejos przedstawiają historię Portugalii, nie tylko widoczki." },
     "trindade": { "name": "Igreja da Santíssima Trindade", "hours": "Pt do 17:00", "why": "Jeden z największych kościołów Porto, bezpłatny do zwiedzania." },
     "camara": { "name": "Câmara Municipal do Porto", "why": "Ratusz miejski — warto zobaczyć choćby z zewnątrz." },
     "bolhao": { "name": "Mercado do Bolhão", "hours": "Pt 08:00–20:00, sob 08:00–18:00", "why": "Odrestaurowany zabytkowy targ — dobre miejsce na przekąskę." },
@@ -134,15 +143,30 @@
     "elevador": { "name": "Elevador da Ribeira", "why": "Funikular — skrót z nabrzeża do górnej części miasta." },
     "serralves": { "name": "Serralves", "hours": "10:00–19:00 (sprawdź godziny sezonowe)", "why": "Willa w stylu art déco, park, muzeum sztuki współczesnej i Treetop Walk." },
     "banco-materiais": { "name": "Banco de Materiais", "hours": "wt–nd 10:00–17:30", "why": "Małe, bezpłatne muzeum materiałów architektonicznych i płytek." },
-    "bolsa": { "name": "Palácio da Bolsa", "hours": "09:00–18:30 (tylko z przewodnikiem)", "why": "Okazała dawna giełda — Sala Arabska to główna atrakcja." },
+    "bolsa": { "name": "Palácio da Bolsa", "hours": "09:00–18:30 (tylko z przewodnikiem)", "why": "Dawna giełda — Sala Arabska powstała, by zaimponować odwiedzającemu królowi, nie z czasów islamskich." },
     "ponte": { "name": "Ponte Dom Luís I", "why": "Kultowy, dwupoziomowy żelazny most — warto przejść oboma poziomami." },
     "cais-gaia": { "name": "Cais de Gaia", "why": "Bulwar po stronie Gai, naprzeciwko Ribeiry." },
     "coelho": { "name": "O Coelho — Bordalo II", "why": "Gigantyczny królik z recyklingu, plenerowa instalacja artystyczna." },
     "winery": { "name": "Winiarnia — np. Caves Cálem", "why": "Zwiedzanie piwnic z winem porto i degustacja — zarezerwuj wcześniej." },
     "teleferico": { "name": "Teleférico de Gaia", "hours": "10:00–20:00 (w tym okresie)", "why": "Kolejka linowa nad nabrzeżem Gai z szerokim widokiem na Duero." },
-    "serra-pilar": { "name": "Serra do Pilar + punkt widokowy", "why": "Jeden z najlepszych punktów na zachód słońca nad obiema stronami rzeki (wnętrze klasztoru obecnie zamknięte)." },
+    "serra-pilar": { "name": "Serra do Pilar + punkt widokowy", "why": "Najlepszy zachód słońca nad obiema stronami rzeki — klasztor zamknięty, ale to tu toczyło się oblężenie Porto w 1832–33." },
     "palacio-cristal": { "name": "Jardins do Palácio de Cristal", "hours": "08:00–21:00 we wrześniu", "why": "Rozległe tarasowe ogrody z widokiem na rzekę i miasto, w tym pawie." },
     "sentimentos": { "name": "Jardim dos Sentimentos", "why": "Spokojniejszy, mniej odwiedzany zakątek tych samych ogrodów." }
+  },
+  "history": {
+    "title": "Bardzo krótka historia Porto",
+    "subtitle": "Dziewięć momentów, które tłumaczą to, co właśnie zwiedzasz",
+    "events": {
+      "portus-cale": { "title": "Portus Cale", "note": "Rzymskie osady nad Duero dały nazwę Portugalii" },
+      "county": { "title": "Hrabstwo Portugalii", "note": "Powstało tutaj w 1096 roku — początek państwa" },
+      "ceuta-fleet": { "title": "Flota Henryka Żeglarza", "note": "Porto oddało mięso statkom, zostawiło sobie flaki — stąd \"tripeiros\"" },
+      "methuen": { "title": "Traktat z Methuen", "note": "Umocnił handel winem między Anglią a Portugalią — stąd nazwa \"porto\"" },
+      "clerigos-built": { "title": "Budowa Torre dos Clérigos", "note": "Autor: Nicolau Nasoni — na trasie w sobotę" },
+      "ponte-barcas": { "title": "Katastrofa Ponte das Barcas", "note": "Zawalenie pontonowego mostu podczas wojny półwyspowej" },
+      "ponte-dom-luis": { "title": "Ukończenie Ponte Dom Luís I", "note": "Autor: Théophile Seyrig, z pracowni Gustave'a Eiffla" },
+      "unesco": { "title": "Ribeira na liście UNESCO", "note": "Zabytkowe centrum Porto uznane za dziedzictwo światowe" },
+      "capital-of-culture": { "title": "Europejska Stolica Kultury", "note": "Rok Porto w centrum uwagi" }
+    }
   },
   "culture": {
     "categories": {
@@ -185,21 +209,21 @@
     "hintIOS": "Stuknij ikonę Udostępnij, a potem „Dodaj do ekranu początkowego”.",
     "button": "Zainstaluj"
   },
+  "bookings": {
+    "title": "Co zarezerwować",
+    "notBooked": "Jeszcze niezarezerwowane",
+    "items": {
+      "lello": { "title": "Livraria Lello", "note": "Slot wejścia" },
+      "clerigos": { "title": "Torre dos Clérigos", "note": "~14:20 w sobotę" },
+      "bolsa": { "title": "Palácio da Bolsa", "note": "Zwiedzanie z przewodnikiem, ~15:10 w sobotę" },
+      "wine-cellar": { "title": "Degustacja w winiarni", "note": "~17:20 w sobotę" },
+      "match-tickets": { "title": "Bilety FC Porto – Benfica", "note": "Niedziela 20:30" }
+    }
+  },
   "guide": {
     "subtitle": "Praktyczne podstawy poruszania się po Porto",
     "phrasesTitle": "Przydatne zwroty",
     "sections": {
-      "book-ahead": {
-        "title": "Co zarezerwować",
-        "items": [
-          "Livraria Lello — zarezerwuj konkretny slot wejścia.",
-          "Torre dos Clérigos — sobota, celuj w ~14:20–14:30.",
-          "Palácio da Bolsa — sobota, zwiedzanie z przewodnikiem około ~15:10–15:30.",
-          "Degustacja w winiarni — sobota, ~17:20.",
-          "Mecz FC Porto – Benfica — bilety i wejście zgodnie z zasadami organizatora.",
-          "Zostaw sobie opcję taxi/Uber na powrót po meczu."
-        ]
-      },
       "rules-of-thumb": {
         "title": "Zasady, żeby plan był wygodny",
         "items": [
@@ -208,7 +232,8 @@
           "Wieża Clérigos jest w sobotę, bez pośpiechu w piątek.",
           "Niedziela płynnie prowadzi do meczu — bez osobnej wycieczki.",
           "Brak plaż i Matosinhos w tym planie.",
-          "Serra do Pilar: tylko punkt widokowy, klasztor zamknięty."
+          "Serra do Pilar: tylko punkt widokowy, klasztor zamknięty.",
+          "Plan B na deszcz: zamiast punktów widokowych — Bolsa, São Francisco albo muzeum w Serralves."
         ]
       },
       "money": {
@@ -234,6 +259,14 @@
           "Głównie pieszo — wygodne buty ważniejsze niż bilety.",
           "Metro/tramwaj/autobus: karta Andante, do kupienia na stacjach.",
           "Taxi/Uber na powrót po meczu."
+        ]
+      },
+      "essentials": {
+        "title": "Na wypadek nagłej sytuacji",
+        "items": [
+          "Numer alarmowy: 112 (policja, pogotowie, straż pożarna).",
+          "Apteki (farmácia) oznaczone są zielonym krzyżem.",
+          "Jeśli padnie telefon: adres apartamentu i godzina lotu są na tej stronie — warto zapamiętać albo zrobić zrzut ekranu."
         ]
       }
     }

@@ -11,7 +11,8 @@
       "paid": "Paid",
       "food": "Food",
       "rest": "Rest",
-      "travel": "Travel"
+      "travel": "Travel",
+      "urgent": "Don't be late"
     },
     "category": {
       "sight": "Sight",
@@ -22,6 +23,8 @@
     },
     "openInMaps": "Open in Maps ↗",
     "hours": "Hours",
+    "share": "Share",
+    "linkCopied": "Link copied!",
     "map": "Map ↗",
     "noSpotsMatch": "No spots match these filters.",
     "filters": {
@@ -33,7 +36,13 @@
       "experience": "Experiences",
       "anyPrice": "Any price",
       "free": "Free",
-      "paid": "Paid"
+      "paid": "Paid",
+      "favorites": "Favorites"
+    },
+    "dayShort": {
+      "fri": "Fri",
+      "sat": "Sat",
+      "sun": "Sun"
     }
   },
   "trip": {
@@ -79,7 +88,7 @@
       "fri-18": { "title": "Igreja e Museu de São Francisco" },
       "fri-19": { "title": "Cais da Ribeira", "note": "The postcard stretch" },
       "fri-20": { "title": "Elevador da Ribeira / funicular", "note": "Used as a shortcut back up" },
-      "fri-21": { "title": "Dinner + back to the apartment", "note": "End of sightseeing for the day" },
+      "fri-21": { "title": "Dinner + back to the apartment", "note": "Ribeira's scenic but pricier — try a street inland" },
       "sat-01": { "title": "Breakfast", "note": "At the apartment" },
       "sat-02": { "title": "Depart for Serralves", "note": "On foot, ~45–50 min" },
       "sat-03": { "title": "Serralves", "note": "Relaxed block: park + museum / Treetop Walk" },
@@ -97,7 +106,7 @@
       "sat-15": { "title": "Serra do Pilar + viewpoint", "note": "Monastery interior currently closed" },
       "sat-16": { "title": "Ponte Dom Luís I — upper deck" },
       "sat-17": { "title": "Back to the apartment", "note": "Rest" },
-      "sat-18": { "title": "Dinner", "note": "Light" },
+      "sat-18": { "title": "Dinner", "note": "Light — Baixa has better value than the riverfront" },
       "sun-01": { "title": "Breakfast", "note": "At the apartment" },
       "sun-02": { "title": "Walk to Jardins do Palácio de Cristal" },
       "sun-03": { "title": "Jardins do Palácio de Cristal", "note": "Free, 08:00–21:00 in September" },
@@ -105,7 +114,7 @@
       "sun-05": { "title": "Walk back", "note": "No more attractions" },
       "sun-06": { "title": "Lunch", "note": "Light to medium" },
       "sun-07": { "title": "Rest", "note": "Deliberate buffer before the match" },
-      "sun-08": { "title": "Early dinner", "note": "Not right before entering the stadium" },
+      "sun-08": { "title": "Early dinner", "note": "Quick bite near Bolhão before the walk to Dragão" },
       "sun-09": { "title": "Walk to Estádio do Dragão", "note": "Better to leave early" },
       "sun-10": { "title": "At the stadium", "note": "Buffer for entry and security checks" },
       "sun-11": { "title": "FC Porto – Benfica" },
@@ -115,12 +124,12 @@
     }
   },
   "spots": {
-    "se": { "name": "Sé Cathedral", "hours": "09:00–18:30 (tower until 18:00)", "why": "Porto's cathedral, with views over the Ribeira rooftops." },
+    "se": { "name": "Sé Cathedral", "hours": "09:00–18:30 (tower until 18:00)", "why": "Romanesque-turned-Baroque cathedral, with views over the Ribeira rooftops." },
     "sao-lourenco": { "name": "Igreja de São Lourenço / MASA", "hours": "Fri 09:00–16:30", "why": "Church plus a modern art museum in one visit." },
     "mirador-sao-lourenco": { "name": "Miradouro da Igreja de São Lourenço", "why": "Quick free viewpoint right by São Lourenço." },
     "mirador-vitoria": { "name": "Miradouro da Vitória", "why": "One of the best classic postcard views over the rooftops and river." },
     "mirador-virtudes": { "name": "Miradouro das Virtudes", "why": "Terraced garden viewpoint, great for a breather." },
-    "sao-bento": { "name": "São Bento Station", "hours": "06:30–01:00", "why": "Working train station with a stunning azulejo tile-mural hall." },
+    "sao-bento": { "name": "São Bento Station", "hours": "06:30–01:00", "why": "Working station; its azulejo panels depict Portuguese history, not just scenery." },
     "trindade": { "name": "Igreja da Santíssima Trindade", "hours": "Fri until 17:00", "why": "One of Porto's largest churches, free to step into." },
     "camara": { "name": "Câmara Municipal do Porto", "why": "Porto's city hall — worth a look from the outside." },
     "bolhao": { "name": "Mercado do Bolhão", "hours": "Fri 08:00–20:00, Sat 08:00–18:00", "why": "Restored historic market — good for snacks and people-watching." },
@@ -134,15 +143,30 @@
     "elevador": { "name": "Elevador da Ribeira", "why": "Funicular shortcut up from the riverside to the upper town." },
     "serralves": { "name": "Serralves", "hours": "10:00–19:00 (check seasonal hours)", "why": "Art deco villa, park, contemporary art museum and Treetop Walk." },
     "banco-materiais": { "name": "Banco de Materiais", "hours": "Tue–Sun 10:00–17:30", "why": "Small, free museum of architectural materials and tiles." },
-    "bolsa": { "name": "Palácio da Bolsa", "hours": "09:00–18:30 (guided tour only)", "why": "Opulent former stock exchange — the Arabian Room is the highlight." },
+    "bolsa": { "name": "Palácio da Bolsa", "hours": "09:00–18:30 (guided tour only)", "why": "Former stock exchange — the Arabian Room was built to impress a visiting king, not from Islamic-era Porto." },
     "ponte": { "name": "Ponte Dom Luís I", "why": "Iconic double-deck iron bridge — walk both levels for different views." },
     "cais-gaia": { "name": "Cais de Gaia", "why": "Riverside promenade on the Gaia side, facing the Ribeira." },
     "coelho": { "name": "O Coelho — Bordalo II", "why": "Giant recycled-material rabbit street art installation." },
     "winery": { "name": "Wine cellar — e.g. Caves Cálem", "why": "Port wine cellar tour + tasting — book a slot in advance." },
     "teleferico": { "name": "Teleférico de Gaia", "hours": "10:00–20:00 (this period)", "why": "Cable car over the Gaia riverside with wide Douro views." },
-    "serra-pilar": { "name": "Serra do Pilar + viewpoint", "why": "One of the best sunset viewpoints over both riverbanks (monastery interior currently closed)." },
+    "serra-pilar": { "name": "Serra do Pilar + viewpoint", "why": "Best sunset viewpoint over both riverbanks — monastery closed, but the 1832–33 siege was fought right here." },
     "palacio-cristal": { "name": "Jardins do Palácio de Cristal", "hours": "08:00–21:00 in September", "why": "Sweeping garden terraces with river and city views, peacocks included." },
     "sentimentos": { "name": "Jardim dos Sentimentos", "why": "A quiet, less-visited corner within the same gardens." }
+  },
+  "history": {
+    "title": "A very short history of Porto",
+    "subtitle": "Nine moments that explain what you're walking through",
+    "events": {
+      "portus-cale": { "title": "Portus Cale", "note": "Roman twin settlements on the Douro give Portugal its name" },
+      "county": { "title": "County of Portugal", "note": "Founded here in 1096 — where the nation began" },
+      "ceuta-fleet": { "title": "Henry the Navigator's fleet", "note": "Porto sent its meat to the ships, kept the tripe — hence \"tripeiros\"" },
+      "methuen": { "title": "Treaty of Methuen", "note": "Cements the England–Portugal wine trade — why it's called \"Port\"" },
+      "clerigos-built": { "title": "Torre dos Clérigos built", "note": "By Nicolau Nasoni — on Saturday's route" },
+      "ponte-barcas": { "title": "Ponte das Barcas disaster", "note": "A pontoon bridge collapse during the Peninsular War" },
+      "ponte-dom-luis": { "title": "Ponte Dom Luís I completed", "note": "By Théophile Seyrig, of Gustave Eiffel's firm" },
+      "unesco": { "title": "Ribeira becomes a UNESCO site", "note": "Porto's historic centre named World Heritage" },
+      "capital-of-culture": { "title": "European Capital of Culture", "note": "Porto's year in the spotlight" }
+    }
   },
   "culture": {
     "categories": {
@@ -185,21 +209,21 @@
     "hintIOS": "Tap the Share icon, then \"Add to Home Screen\".",
     "button": "Install"
   },
+  "bookings": {
+    "title": "Book ahead",
+    "notBooked": "Not booked yet",
+    "items": {
+      "lello": { "title": "Livraria Lello", "note": "Timed entry slot" },
+      "clerigos": { "title": "Torre dos Clérigos", "note": "~14:20 Saturday" },
+      "bolsa": { "title": "Palácio da Bolsa", "note": "Guided tour, ~15:10 Saturday" },
+      "wine-cellar": { "title": "Wine cellar tasting", "note": "~17:20 Saturday" },
+      "match-tickets": { "title": "FC Porto – Benfica tickets", "note": "Sunday 20:30" }
+    }
+  },
   "guide": {
     "subtitle": "Practical basics for getting around Porto",
     "phrasesTitle": "Handy phrases",
     "sections": {
-      "book-ahead": {
-        "title": "Book ahead",
-        "items": [
-          "Livraria Lello — reserve a timed entry slot.",
-          "Torre dos Clérigos — Saturday, aim for ~14:20–14:30.",
-          "Palácio da Bolsa — Saturday, guided tour around ~15:10–15:30.",
-          "Wine cellar tasting — Saturday ~17:20.",
-          "FC Porto – Benfica — tickets and entry per the organiser.",
-          "Keep a taxi/Uber option ready for the return after the match."
-        ]
-      },
       "rules-of-thumb": {
         "title": "Trip rules of thumb",
         "items": [
@@ -208,7 +232,8 @@
           "Clérigos Tower is Saturday, not rushed into Friday.",
           "Sunday flows straight into the match — no separate outing.",
           "No beaches or Matosinhos on this trip.",
-          "Serra do Pilar: viewpoint only, monastery closed."
+          "Serra do Pilar: viewpoint only, monastery closed.",
+          "Rain backup: swap outdoor viewpoints for Bolsa, São Francisco, or Serralves' museum."
         ]
       },
       "money": {
@@ -234,6 +259,14 @@
           "Mostly on foot — comfortable shoes over transit passes.",
           "Metro/tram/bus uses the Andante card, sold at stations.",
           "Taxi/Uber for the post-match return."
+        ]
+      },
+      "essentials": {
+        "title": "In case of emergency",
+        "items": [
+          "Emergency number: 112 (police, ambulance, fire).",
+          "Pharmacies (farmácia) are marked with a green cross.",
+          "If your phone dies: apartment address and flight time are on this page — worth a mental note or screenshot."
         ]
       }
     }
