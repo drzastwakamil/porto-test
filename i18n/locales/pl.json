@@ -65,7 +65,7 @@
     "progress": "{checked} / {total} zrobione",
     "days": {
       "fri": { "label": "Piątek", "date": "18 wrz", "theme": "Historyczne centrum + degustacja wina w Gai — najbardziej intensywny dzień, załóż wygodne buty" },
-      "sat": { "label": "Sobota", "date": "19 wrz", "theme": "Serralves + Clérigos + Bolsa + Gaia — celowo spokojny początek" },
+      "sat": { "label": "Sobota", "date": "19 wrz", "theme": "Lekcja surfingu w Matosinhos + Clérigos + Bolsa + Gaia" },
       "sun": { "label": "Niedziela", "date": "20 wrz", "theme": "Lekki dzień + mecz FC Porto – Benfica, 20:30" },
       "mon": { "label": "Poniedziałek", "date": "21 wrz", "theme": "Wylot" }
     },
@@ -93,9 +93,9 @@
       "fri-20": { "title": "Elevador da Ribeira / funikular", "note": "Używamy jako skrótu pod górę" },
       "fri-21": { "title": "Kolacja i powrót do apartamentu", "note": "Ribeira malownicza, ale droższa — spróbuj ulicy w głąb miasta" },
       "sat-01": { "title": "Śniadanie", "note": "W apartamencie" },
-      "sat-02": { "title": "Wyjście do Serralves", "note": "Pieszo, ok. 45–50 min" },
-      "sat-03": { "title": "Serralves", "note": "Spokojny blok: park + muzeum / Treetop Walk" },
-      "sat-04": { "title": "Powrót pieszo", "note": "Bez dodatkowych atrakcji" },
+      "sat-surf-travel": { "title": "Metro do Matosinhos", "note": "Linia A, ok. 20 min + spacer na plażę" },
+      "sat-surf": { "title": "Lekcja surfingu", "note": "Dodane tego samego dnia — Serralves odpada w tym wyjeździe" },
+      "sat-surf-back": { "title": "Metro z powrotem do centrum", "note": "Prysznic, przebranie, bez dodatkowych przystanków" },
       "sat-05": { "title": "Lunch", "note": "Dobry moment na francesinhę" },
       "sat-06": { "title": "Banco de Materiais", "note": "Bezpłatnie, 10:00–17:30" },
       "sat-07": { "title": "Torre dos Clérigos + Museu", "note": "Opłacone — 3 bilety, kolejka priorytetowa" },
@@ -255,10 +255,9 @@
         "items": [
           "Piątek to najwięcej chodzenia — wygodne buty.",
           "Degustacja wina jest teraz w piątek wieczorem (17:20), nie w sobotę — wciśnięta między zwiedzanie a kolację, przez przejście do Gai.",
-          "Sobota celowo zaczyna się spokojnie (10:00–12:00 w Serralves).",
+          "Sobotni poranek to teraz lekcja surfingu w Matosinhos (10:00–11:30) zamiast Serralves.",
           "Wieża Clérigos jest w sobotę, bez pośpiechu w piątek.",
           "Niedziela płynnie prowadzi do meczu — bez osobnej wycieczki.",
-          "Brak plaż i Matosinhos w tym planie.",
           "Serra do Pilar: tylko punkt widokowy, klasztor zamknięty.",
           "Plan B na deszcz: zamiast punktów widokowych — Bolsa, São Francisco albo muzeum w Serralves."
         ]

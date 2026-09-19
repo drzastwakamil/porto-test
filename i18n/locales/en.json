@@ -65,7 +65,7 @@
     "progress": "{checked} / {total} done",
     "days": {
       "fri": { "label": "Friday", "date": "18 Sep", "theme": "Historic centre + a Gaia wine tasting — the most intense day, wear comfortable shoes" },
-      "sat": { "label": "Saturday", "date": "19 Sep", "theme": "Serralves + Clérigos + Bolsa + Gaia — deliberately slow start" },
+      "sat": { "label": "Saturday", "date": "19 Sep", "theme": "Matosinhos surf lesson + Clérigos + Bolsa + Gaia" },
       "sun": { "label": "Sunday", "date": "20 Sep", "theme": "Light day + FC Porto – Benfica, 20:30" },
       "mon": { "label": "Monday", "date": "21 Sep", "theme": "Departure" }
     },
@@ -93,9 +93,9 @@
       "fri-20": { "title": "Elevador da Ribeira / funicular", "note": "Used as a shortcut back up" },
       "fri-21": { "title": "Dinner + back to the apartment", "note": "Ribeira's scenic but pricier — try a street inland" },
       "sat-01": { "title": "Breakfast", "note": "At the apartment" },
-      "sat-02": { "title": "Depart for Serralves", "note": "On foot, ~45–50 min" },
-      "sat-03": { "title": "Serralves", "note": "Relaxed block: park + museum / Treetop Walk" },
-      "sat-04": { "title": "Walk back", "note": "No extra stops" },
+      "sat-surf-travel": { "title": "Metro to Matosinhos", "note": "Line A, ~20 min + walk to the beach" },
+      "sat-surf": { "title": "Surfing lesson", "note": "Added same-day — Serralves skipped this trip" },
+      "sat-surf-back": { "title": "Metro back to the centre", "note": "Rinse off, change, no extra stops" },
       "sat-05": { "title": "Lunch", "note": "Good moment for a francesinha" },
       "sat-06": { "title": "Banco de Materiais", "note": "Free, 10:00–17:30" },
       "sat-07": { "title": "Torre dos Clérigos + Museum", "note": "Booked — 3 tickets, priority queue" },
@@ -255,10 +255,9 @@
         "items": [
           "Friday is the most walking-heavy day — comfortable shoes.",
           "Wine cellar tasting is Friday evening now (17:20), not Saturday — squeezed in via a Gaia crossing before dinner.",
-          "Saturday starts slow on purpose (10:00–12:00 at Serralves).",
+          "Saturday morning is now a Matosinhos surf lesson (10:00–11:30) instead of Serralves.",
           "Clérigos Tower is Saturday, not rushed into Friday.",
           "Sunday flows straight into the match — no separate outing.",
-          "No beaches or Matosinhos on this trip.",
           "Serra do Pilar: viewpoint only, monastery closed.",
           "Rain backup: swap outdoor viewpoints for Bolsa, São Francisco, or Serralves' museum."
         ]

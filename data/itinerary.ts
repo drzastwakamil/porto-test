@@ -47,9 +47,9 @@ export const itinerary: ItineraryDay[] = [
     id: 'sat',
     items: [
       { id: 'sat-01', time: '08:00–08:45', status: 'food' },
-      { id: 'sat-02', time: '09:10', status: 'travel' },
-      { id: 'sat-03', time: '10:00–12:00', status: 'paid', mapQuery: 'Serralves, Porto, Portugal' },
-      { id: 'sat-04', time: '12:00–12:50', status: 'travel' },
+      { id: 'sat-surf-travel', time: '09:15–09:45', status: 'travel', mapQuery: 'Praia de Matosinhos, Portugal' },
+      { id: 'sat-surf', time: '10:00–11:30', status: 'paid', mapQuery: 'Praia de Matosinhos, Portugal' },
+      { id: 'sat-surf-back', time: '11:30–12:00', status: 'travel' },
       { id: 'sat-05', time: '12:50–13:20', status: 'food' },
       { id: 'sat-07', time: '13:30–14:15', status: 'booked', price: '~€10', mapQuery: 'Torre dos Clérigos, Porto, Portugal' },
       { id: 'sat-06', time: '14:20–14:50', status: 'free', mapQuery: 'Banco de Materiais, Porto, Portugal' },
